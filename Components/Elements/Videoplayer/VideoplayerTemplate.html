@@ -31,11 +31,13 @@
 		.videoContainer
 		{
 			background-color: #66BB6A;
-			position: absolute;
-			top:      0;
-			left:     0;
-			width:    100%;
-			height:   100%;
+			position:         absolute;
+			top:              0;
+			left:             0;
+			width:            100%;
+			height:           100%;
+			display:          flex;
+			justify-content:  center;
 		}
 
 		.videoContainer img,
@@ -68,7 +70,7 @@
 
 		.sourceWindow
 		{
-			width:      100%;
+			width: 100%;
 		}
 
 		.triggers
@@ -86,6 +88,13 @@
 			overflow:      hidden;
 		}
 
+		.trigger.button
+		{
+			margin:      8px;
+			margin-left: 0;
+			height:      24px;
+		}
+
 		.controls
 		{
 			height:          30px;
@@ -97,7 +106,7 @@
 	<div class = "playerLayersContainer">
 		<div class = "video layer">
 			<div class = "videoContainer">
-				<img src = "" />
+				<img src = "frames/frame1.jpg" />
 			</div>
 			<div class = "controlsContainer">
 				<div class = "header">
