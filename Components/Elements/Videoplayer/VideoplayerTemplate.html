@@ -17,14 +17,25 @@
 			display: none;
 		}
 
+		.playerLayersContainer
+		{
+			height: 100%;
+		}
+
+		.layer
+		{
+			position: relative;
+			height:   100%;
+		}
+
 		.videoContainer
 		{
-			background-color: black;
-			position:         relative;
-			top:              0;
-			left:             0;
-			width:            100%;
-			height:           100%;
+			background-color: #66BB6A;
+			position: absolute;
+			top:      0;
+			left:     0;
+			width:    100%;
+			height:   100%;
 		}
 
 		.videoContainer img,
@@ -38,6 +49,9 @@
 		{
 			display:        flex;
 			flex-direction: column;
+			height:         100%;
+			width:          100%;
+			position:       absolute;
 		}
 
 		.header
@@ -54,15 +68,22 @@
 
 		.sourceWindow
 		{
-			height: 100%;
+			width:      100%;
 		}
 
 		.triggers
 		{
-			width:      30%;
-			overflow:   hidden;
-			overflow-y: auto;
-			height:     100%;
+			width:       30%;
+			overflow:    hidden;
+			overflow-y:  auto;
+			white-space: nowrap;
+		}
+
+		.trigger
+		{
+			text-overflow: ellipsis;
+			width:         100%;
+			overflow:      hidden;
 		}
 
 		.controls
@@ -74,7 +95,7 @@
 
 	</style>
 	<div class = "playerLayersContainer">
-		<div class = "videoLayer">
+		<div class = "video layer">
 			<div class = "videoContainer">
 				<img src = "" />
 			</div>
@@ -95,6 +116,24 @@
 						<div class = "trigger button animated">Trigger 4</div>
 						<div class = "trigger button animated">Trigger 5</div>
 						<div class = "trigger button animated">Trigger 6</div>
+						<div class = "trigger button animated">Trigger 7</div>
+						<div class = "trigger button animated">Trigger 8</div>
+						<div class = "trigger button animated">Trigger 9</div>
+						<div class = "trigger button animated">Trigger 10</div>
+						<div class = "trigger button animated">Trigger 11</div>
+						<div class = "trigger button animated">Trigger 12</div>
+						<div class = "trigger button animated">Trigger 13</div>
+						<div class = "trigger button animated">Trigger 14</div>
+						<div class = "trigger button animated">Trigger 15</div>
+						<div class = "trigger button animated">Trigger 16</div>
+						<div class = "trigger button animated">Trigger 17</div>
+						<div class = "trigger button animated">Trigger 18</div>
+						<div class = "trigger button animated">Trigger 19</div>
+						<div class = "trigger button animated">Trigger 20</div>
+						<div class = "trigger button animated">Trigger 21</div>
+						<div class = "trigger button animated">Trigger 22</div>
+						<div class = "trigger button animated">Trigger 23</div>
+						<div class = "trigger button animated">Trigger 24</div>
 					</span>
 				</div>
 				<div class = "controls">
@@ -108,10 +147,10 @@
 				</div>
 			</div>
 		</div>
-		<div class = "settingsLayer hidden">
+		<div class = "settings layer hidden">
 
 		</div>
-		<div class = "recognitionLayer hidden">
+		<div class = "recognition layer hidden">
 
 		</div>
 	</div>
