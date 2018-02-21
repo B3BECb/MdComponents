@@ -1,0 +1,31 @@
+.login
+{
+	left:       0;
+	margin-top: 0;
+	top:        calc(50% - (260px - 24px) / 2);
+	width:      calc(100% - 24px - 24px);
+}
+
+.login .logo
+{
+	margin-top: -34vw;
+}
+
+@media (orientation: landscape)
+{
+	.login
+	{
+		top:    initial;
+		bottom: 0;
+	}
+
+	.login .logo
+	{
+		margin-top: -80px;
+	}
+
+	.login .logo img
+	{
+		width: 30%;
+	}
+}

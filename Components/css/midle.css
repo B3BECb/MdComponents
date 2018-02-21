@@ -1,0 +1,33 @@
+.modalWindowWrapper
+{
+	align-items: flex-start;
+}
+
+.modalWindowWrapper .window
+{
+	width: 100vw;
+}
+
+.guestPassesTable
+{
+	margin-left: initial;
+	width:       100vw;
+	height:      calc(100vh - 100px);
+	z-index:     1;
+	min-width:   initial;
+}
+
+.mainPart
+{
+	padding-top: 0px !important;
+	height: calc(100vh - 60px - 40px) !important;
+}
+
+@media (orientation: landscape)
+{
+	.modalWindowWrapper .window.scrollable
+	{
+		height:     calc(100vh - 24px);
+		overflow-y: auto;
+	}
+}

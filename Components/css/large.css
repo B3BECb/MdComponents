@@ -1,0 +1,164 @@
+body:not(#guestPassBody) .mainPart
+{
+	padding-top: 0px !important;
+}
+
+.wrapItemContent
+{
+	margin-bottom: initial;
+	height:        100%;
+}
+
+#listsList
+{
+	max-height:  initial;
+	height:      calc(100% - 66px);
+	z-index:     2;
+	width:       initial;
+	margin-left: initial;
+}
+
+.materialModalWindow.dialog
+{
+	margin-top: initial;
+	top:        calc(50% / 2);
+}
+
+#journal .contentContainer
+{
+	padding-top:     initial;
+	justify-content: space-between;
+}
+
+.journalFrameWindow
+{
+	width:     calc(50vw - 24px - 24px);
+	min-width: initial;
+	height:    calc(100vh - 130px - 40px - 32px);
+}
+
+.containerContentItem.tableContainer
+{
+	width: 50vw;
+}
+
+#journal material-data-table
+{
+	max-width: initial !important;
+	min-width: initial;
+	height:    calc(100vh - 130px - 40px) !important;
+}
+
+#journal .journalFrameWindow .controlsButtons
+{
+	display: none;
+}
+
+.journalFrameWindow #ImageBox
+{
+	margin-top: initial !important;
+}
+
+.journalFrameWindow .plates .imageContainer
+{
+	width:      120px;
+	height:     25px;
+	margin-top: initial !important;
+}
+
+.journalFrameWindow .registationInfo img
+{
+	width:  42px !important;
+	height: 42px !important;
+}
+
+#journal .journalFrameWindow .description .main
+{
+	display: flex;
+}
+
+#journal .journalFrameWindow .description .main .plates
+{
+	width: 120px;
+}
+
+#journal .journalFrameWindow .description .main .registationInfo
+{
+	margin-left: initial;
+}
+
+#journal .journalFrameWindow .description .main .dateTimeInfo
+{
+	font-size: 16px;
+	bottom:    5px;
+}
+
+#journal .journalFrameWindow .description .additional
+{
+	display: none;
+}
+
+#journal .pageSettings
+{
+	display: none;
+}
+
+#journal #descriptionFields
+{
+	display: none;
+}
+
+#guestPassBody #modalForUpdateExistRecord
+{
+	left: calc(50% - 473px);
+}
+
+.card.standard
+{
+	max-width: 320px;
+	margin-top: 8px;
+}
+
+@media (orientation: portrait)
+{
+	#journal material-data-table
+	{
+		height: calc(100vh - 130px - 40px - 320px) !important;
+	}
+
+	#journal .contentContainer
+	{
+		flex-direction:  column-reverse;
+		justify-content: flex-end;
+	}
+
+	#journal .journalFrameWindow
+	{
+		height:  250px;
+		width:   initial;
+		display: flex;
+	}
+
+	#ImageBox
+	{
+		flex-shrink: 1;
+		height:      100% !important;
+	}
+
+	#journal .journalFrameWindow .description
+	{
+		flex-shrink: 0;
+		height:      initial;
+		margin-left: 8px;
+	}
+
+	#journal .journalFrameWindow .description .additional
+	{
+		display: initial;
+	}
+
+	#journal .containerContentItem.tableContainer
+	{
+		width: 100vw;
+	}
+}

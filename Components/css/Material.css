@@ -1,0 +1,963 @@
+@font-face
+{
+	font-family: "Roboto";
+	src:         url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face
+{
+	font-family: "Roboto Bold";
+	src:         url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face
+{
+	font-family: "Roboto Medium";
+	src:         url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+.hidden
+{
+	display: none !important;
+}
+
+.adaptive
+{
+	display:         flex;
+	flex-direction:  row;
+	justify-content: space-around;
+}
+
+.materialHeader
+{
+	position:         relative;
+	min-height:       60px;
+	background-color: #FFFFFF;
+	padding-right:    24px;
+	padding-left:     24px;
+	box-shadow:       0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+	z-index:          2;
+}
+
+.materialHeader > div
+{
+	height: 60px;
+}
+
+.materialHeader .title
+{
+	margin-left: 8px;
+	font-family: "Roboto Medium";
+	font-size:   20px;
+	font-weight: 500;
+	top:         20px;
+	position:    relative;
+	display:     inline-block;
+}
+
+/*
+TODO: Deprecated. Replace with about user menu
+*/
+.materialHeader .materialUserType
+{
+	font-family:    Roboto;
+	font-size:      15px;
+	display:        inline-block;
+	vertical-align: top;
+	top:            20px;
+	position:       relative;
+}
+
+.materialHeader .icon
+{
+	position: relative;
+	float:    left;
+	padding:  20px 24px 0 0;
+	cursor:   pointer;
+}
+
+.materialHeader .icon:before, .materialHeader .icon:after
+{
+	background-color: rgba(33, 33, 33, 0.14);
+	position:         absolute;
+	top:              8px;
+	right:            12px;
+	width:            48px;
+	height:           100%;
+	transition:       opacity 250ms linear;
+	border-radius:    50%;
+	opacity:          0;
+	pointer-events:   none;
+	content:          "";
+}
+
+.materialHeader .icon:active:after, .materialHeader .icon:hover:before
+{
+	transition-duration: 85ms;
+	opacity:             .6;
+}
+
+.materialModalWindow
+{
+	overflow:         hidden;
+	display:          none;
+	position:         fixed;
+	background-color: #FFFFFF;
+	z-index:          11;
+	left:             50%;
+	top:              50%;
+	margin-top:       -180px;
+	border-radius:    2px;
+	box-shadow:       0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+.materialModalWindow > .header
+{
+	font-family: "Roboto Bold";
+	font-size:   16px;
+	display:     block;
+	position:    relative;
+	width:       100%;
+	height:      auto;
+	box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	z-index:     2;
+}
+
+.materialModalWindow .header .item
+{
+	position:            relative;
+	height:              48px;
+	padding-left:        16px;
+	padding-right:       16px;
+	transition:          background 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+	background:          linear-gradient(to right, #1E88E5 50%, white 10%);
+	background-size:     200% 100%;
+	background-position: right bottom;
+}
+
+.materialModalWindow .header .item.painted
+{
+	background-position: 0px 100%;
+}
+
+.materialModalWindow .header .item .text
+{
+	position:       relative;
+	display:        inline-block;
+	vertical-align: top;
+	line-height:    3;
+}
+
+.materialModalWindow .header .item .icon
+{
+	float:  left;
+	width:  56px;
+	height: 100%;
+}
+
+.materialModalWindow .header .item .rightIcon
+{
+	float:         right;
+	width:         24px;
+	height:        100%;
+	padding-left:  16px;
+	padding-right: 16px;
+	cursor:        pointer;
+}
+
+.modalWindowWrapper .window.dialog,
+.materialModalWindow.dialog
+{
+	height:         auto;
+	padding:        24px;
+	padding-bottom: 0px;
+	font-family:    "Roboto";
+	font-size:      14px;
+	box-shadow:     0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+	z-index:        24;
+}
+
+.materialModalWindow.dialog > .header
+{
+	font-family:   "Roboto Medium";
+	font-size:     20px;
+	margin-bottom: 20px;
+	position:      initial;
+	width:         initial;
+	height:        initial;
+	box-shadow:    initial;
+	z-index:       initial;
+}
+
+.modalWindowWrapper .window .buttons,
+.materialModalWindow.dialog .buttons
+{
+	height:        36px;
+	margin-top:    8px;
+	margin-bottom: 8px;
+	margin-right:  -16px;
+}
+
+.modalWindowWrapper .window .buttons .button,
+.materialModalWindow.dialog .buttons .button
+{
+	margin-left:   8px;
+	height:        100%;
+	min-width:     64px;
+	padding-left:  8px;
+	padding-right: 8px;
+	float:         right;
+	position:      relative;
+	cursor:        pointer;
+}
+
+.modalWindowWrapper .window .buttons .button .text,
+.materialModalWindow.dialog .buttons .button .text,
+.card .actions .action .text
+{
+	font-family: "Roboto Medium";
+	margin-top:  12px;
+	display:     block;
+	text-align:  center;
+}
+
+.modalWindowWrapper .window .buttons .button .text:before,
+.modalWindowWrapper .window .buttons .button .text:after,
+.materialModalWindow.dialog .buttons .button .text:before,
+.materialModalWindow.dialog .buttons .button .text:after,
+.card .actions .action .text:before,
+.card .actions .action .text:after
+{
+	background-color: rgba(33, 33, 33, 0.14);
+	position:         absolute;
+	top:              0;
+	right:            0px;
+	width:            100%;
+	height:           100%;
+	transition:       opacity 250ms linear;
+	opacity:          0;
+	border-radius:    2px;
+	pointer-events:   none;
+	content:          "";
+}
+
+.modalWindowWrapper .window .buttons .button:active .text:after,
+.modalWindowWrapper .window .buttons .button:hover .text:before,
+.materialModalWindow.dialog .buttons .button:active .text:after,
+.materialModalWindow.dialog .buttons .button:hover .text:before,
+.card .actions .action:active .text:before,
+.card .actions .action:hover .text:after
+{
+	transition-duration: 85ms;
+	opacity:             .6;
+}
+
+.materialModalWindow.dialog .content
+{
+	margin-bottom: 24px;
+	color:         rgba(0, 0, 0, 0.54);
+}
+
+.rightIcon:before, .rightIcon:after
+{
+	background-color: rgba(33, 33, 33, 0.14);
+	position:         absolute;
+	top:              0;
+	right:            19px;
+	width:            48px;
+	height:           100%;
+	transition:       opacity 250ms linear;
+	border-radius:    50%;
+	opacity:          0;
+	pointer-events:   none;
+	content:          "";
+}
+
+.rightIcon:active:after, .rightIcon:hover:before
+{
+	transition-duration: 85ms;
+	opacity:             .6;
+}
+
+.floatingActionButton
+{
+	position:      relative;
+	bottom:        0px;
+	right:         0px;
+	width:         56px;
+	height:        56px;
+	background:    #E53935;
+	border-radius: 50%;
+	opacity:       1;
+	box-shadow:    0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	transition:    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+				   opacity 15ms linear 30ms,
+				   transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+	cursor:        pointer;
+	overflow:      hidden;
+}
+
+.floatingActionButton:hover
+{
+	box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.floatingActionButton:active
+{
+	background: #EF5350;
+	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+
+.bottomRight
+{
+	position: fixed;
+	z-index:  3;
+	right:    32px;
+	bottom:   45px;
+}
+
+.mini
+{
+	top:    23px;
+	right:  9px;
+	width:  40px;
+	height: 40px;
+}
+
+.floatingActionButton.hided
+{
+	opacity:   0;
+	transform: scale(0, 0);
+}
+
+.floatingActionButton.mini span
+{
+	top:      8px;
+	left:     8px;
+	position: relative;
+}
+
+.materialSideMenu
+{
+	width:            0;
+	overflow:         hidden;
+	white-space:      nowrap;
+	height:           100%;
+	background-color: #283138;
+	position:         fixed;
+	z-index:          4;
+	box-shadow:       rgba(0, 0, 0, 0.2) 0px 8px 17px 0px;
+	transition:       width 0.4s;
+	overflow-y:       auto;
+}
+
+.materialSideMenu.settings
+{
+	background: #FFFFFF;
+}
+
+.materialSideMenu.settings a
+{
+	text-decoration: none;
+}
+
+.materialSideMenu[opened]
+{
+	width: 250px;
+}
+
+.materialSideMenu .header
+{
+	position:         relative;
+	height:           60px;
+	background-color: #F1652E;
+}
+
+.materialSideMenu.settings .header
+{
+	display:          flex;
+	justify-content:  space-between;
+	background-color: #FAFAFA;
+	border-bottom:    1px solid rgba(0, 0, 0, 0.12);
+}
+
+.materialSideMenu.settings .header .title
+{
+	color: black;
+}
+
+.materialSideMenu.settings .header .content
+{
+	text-overflow: ellipsis;
+	overflow:      hidden;
+	font-size:     20px;
+	padding-top:   16px;
+	padding-left:  16px;
+	font-family:   "Roboto medium";
+}
+
+.materialHeader.settings .header
+{
+	background-color: #FAFAFA;
+}
+
+.materialSideMenu .header .logo:before
+{
+	position:    absolute;
+	font-family: 'iconsMain';
+	color:       #FFFFFF;
+	content:     '\e90a';
+	font-size:   156px;
+	top:         -48px;
+	left:        12px;
+}
+
+.materialSideMenu .header .icon
+{
+	float:       right;
+	width:       24px;
+	height:      24px;
+	padding:     24px;
+	padding-top: 13px;
+}
+
+.materialSideMenu .header .icon .iconContainer
+{
+	width:    48px;
+	height:   48px;
+	position: relative;
+	cursor:   pointer;
+}
+
+.materialSideMenu .header .icon .iconContainer:before, .materialSideMenu .header .icon .iconContainer:after
+{
+	background-color: rgba(33, 33, 33, 0.14);
+	position:         absolute;
+	width:            100%;
+	height:           100%;
+	transition:       opacity 250ms linear;
+	border-radius:    50%;
+	opacity:          0;
+	pointer-events:   none;
+	content:          "";
+	right:            7px;
+	bottom:           7px;
+}
+
+.materialSideMenu .header .icon .iconContainer:active:after, .materialSideMenu .header .icon .iconContainer:hover:before
+{
+	transition-duration: 85ms;
+	opacity:             .6;
+}
+
+.materialSideMenu > .content
+{
+	display:         flex;
+	flex-direction:  column;
+	justify-content: space-between;
+	height:          calc(100% - 65px);
+	width:           100%;
+}
+
+.materialSideMenu > .content .links
+{
+	font-family: Roboto;
+	font-size:   14px;
+	line-height: 20px;
+	color:       rgba(0, 0, 0, 0.65);
+}
+
+.materialSideMenu > .content .links .section
+{
+	margin-top: 26px;
+}
+
+.materialSideMenu > .content .links .section a
+{
+	display:       block;
+	padding:       5px 0 5px 48px;
+	overflow-x:    hidden;
+	white-space:   nowrap;
+	text-overflow: ellipsis;
+	color:         black;
+}
+
+.materialSideMenu > .content .links .section a:first-child
+{
+	border-left:  solid 4px transparent;
+	color:        rgba(0, 0, 0, 0.87);
+	font-family:  "Roboto medium";
+	font-size:    16px;
+	font-weight:  500;
+	padding:      initial;
+	padding-left: 20px;
+}
+
+.materialSideMenu > .content .links .section.current a:first-child
+{
+	border-left-color: #4285F4;
+	color:             #4285F4;
+}
+
+.materialSideMenu .about
+{
+	display:        flex;
+	flex-direction: column;
+}
+
+.connectionStatusText
+{
+	font-family: roboto medium;
+	font-size:   24px;
+	top:         40%;
+	position:    relative;
+}
+
+.connecting
+{
+	color:     #2196F3;
+	animation: blink5 2s linear infinite;
+}
+
+.connectionError
+{
+	color: #E53935;
+}
+
+@keyframes blink5
+{
+	0%
+	{ color: #2196F3; }
+	50%
+	{ color: #0D47A1; }
+	100%
+	{ color: #2196F3; }
+}
+
+.journalFrameWindow
+{
+	box-shadow:       0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+	background-color: rgb(255, 255, 255);
+	height:           595px;
+	width:            42vw;
+	padding:          16px 24px 16px 24px;
+	min-width:        500px;
+	font-family:      roboto;
+}
+
+.journalFrameWindow .controlsButtons
+{
+	float:        right;
+	margin-right: 22px;
+}
+
+.journalFrameWindow .description
+{
+	height:      30%;
+	margin-top:  15px;
+	white-space: nowrap;
+	overflow:    hidden;
+	font-weight: 600;
+}
+
+.journalFrameWindow .description .imageContainer
+{
+	width:      190px;
+	height:     40px;
+	background: black;
+}
+
+.journalFrameWindow .description .tag
+{
+	color:         white;
+	background:    black;
+	display:       inline-block;
+	margin-top:    8px;
+	margin-right:  8px;
+	padding:       5px;
+	border-radius: 2px;
+}
+
+.journalFrameWindow .description .descriptionField
+{
+	width:          49%;
+	display:        inline-block;
+	height:         100%;
+	vertical-align: top;
+	overflow-y:     auto;
+}
+
+.journalFrameWindow .frameSettings
+{
+	position:      absolute;
+	height:        48px;
+	padding-right: 31px;
+	margin-top:    -8px;
+}
+
+.journalFrameWindow .exit
+{
+	display:  none;
+	position: absolute;
+}
+
+.journalFrameWindow .icon:before, .journalFrameWindow .icon:after
+{
+	background-color: rgba(33, 33, 33, 0.14);
+	position:         absolute;
+	top:              calc(50% - 24px);
+	right:            calc(50% - 24px);
+	width:            48px;
+	height:           48px;
+	transition:       opacity 250ms linear;
+	border-radius:    50%;
+	opacity:          0;
+	pointer-events:   none;
+	content:          "";
+}
+
+.journalFrameWindow .icon:active:after, .journalFrameWindow .icon:hover:before
+{
+	transition-duration: 85ms;
+	opacity:             .6;
+}
+
+.journalFrameWindow .plates
+{
+	display:    inline-block;
+	width:      200px;
+	float:      left;
+	text-align: center;
+}
+
+.journalFrameWindow .registationInfo
+{
+	display:     inline-block;
+	max-width:   320px;
+	margin-left: 8px;
+	overflow:    hidden;
+}
+
+.journalFrameWindow .registationInfo .dateTimeInfo
+{
+	display:   inline-block;
+	font-size: 24px;
+	bottom:    10px;
+	position:  relative;
+}
+
+.journalFrameWindow .additionalInfo
+{
+	display:     inline-block;
+	width:       100%;
+	float:       left;
+	white-space: initial;
+	height:      50%;
+}
+
+#journal #SearchInput
+{
+	left: calc(50% / 2);
+}
+
+#listsList
+{
+	box-shadow:  0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+	width:       50%;
+	margin-left: calc(50% / 2);
+}
+
+.contentContainer
+{
+	padding-top:     44px;
+	height:          100%;
+	display:         flex;
+	justify-content: space-around;
+}
+
+.containerContentItem
+{
+}
+
+#modalForRenameList
+{
+	left:  calc(50% - 215px);
+	width: 400px;
+}
+
+#modalForCreateRecord
+{
+	left: calc(50% - 150px);
+}
+
+.guestPassesTable
+{
+	width:       calc(100vw - 80px);
+	height:      calc(100vh - 90px - 60px - 40px - 40px);
+	position:    relative;
+	margin-left: 40px;
+}
+
+#guestPassBody #mdPaginator
+{
+	margin-top:  2px;
+	margin-left: 40px;
+}
+
+#guestPassBody #modalForTemplatePass
+{
+	left: calc(50% - 240px);
+}
+
+#guestPassBody #modalForTemplatePass .content
+{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#guestPassBody #modalForUpdateExistRecord
+{
+	left: calc(50% - 473px);
+}
+
+.materialModalWindow.dialog.active
+{
+	display: block;
+}
+
+input[type='datetime-local']
+{
+	font-family:   roboto;
+	border:        none;
+	border-bottom: 0.5px solid rgb(117, 117, 117);
+	border-image:  initial;
+	outline:       none;
+	font-size:     16px;
+	width:         100%;
+	background:    transparent;
+}
+
+textarea.material
+{
+	font-family:   roboto;
+	border:        none;
+	border-bottom: 0.5px solid rgb(117, 117, 117);
+	outline:       none;
+	font-size:     16px;
+	background:    transparent;
+}
+
+.card
+{
+	border-radius:    2px;
+	box-shadow:       0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	background-color: #FFFFFF;
+	font-family:      "Roboto";
+	font-size:        14px;
+	height:           fit-content;
+	line-height:      20px;
+}
+
+.card.standard
+{
+	max-width: 390px;
+}
+
+.card.settings
+{
+	width: 390px;
+}
+
+.card .actions
+{
+	padding:         8px;
+	display:         flex;
+	flex-direction:  row;
+	justify-content: flex-start;
+}
+
+.card .actions .action
+{
+	margin-right: 8px;
+	height:       100%;
+	padding:      8px;
+	position:     relative;
+	cursor:       pointer;
+}
+
+.card .actions .action .text
+{
+	margin-top: initial;
+}
+
+.card .part:not( .actions)
+{
+	padding-left:  16px;
+	padding-right: 16px;
+}
+
+.card .header
+{
+	padding-top:    24px;
+	padding-bottom: 16px;
+	font-size:      24px;
+}
+
+.card.settings .header
+{
+	line-height:     32px;
+	color:           rgba(0, 0, 0, 0.65);
+	border-bottom:   1px solid rgba(0, 0, 0, 0.12);
+	display:         flex;
+	flex-direction:  row;
+	justify-content: space-between;
+}
+
+.card .header .icon
+{
+	padding-top: 5px;
+	height:      24px;
+}
+
+.card .header .icon:first-child
+{
+	padding-right: 8px;
+}
+
+.card .header .icon:last-child
+{
+	padding-left: 8px;
+}
+
+.card > .content
+{
+}
+
+.card .header + .content:first-child
+{
+	padding-top: 16px;
+}
+
+.card.settings .content > div
+{
+	padding-top: 24px;
+}
+
+.card.settings .content > div:not(:first-child)
+{
+	padding-bottom: 24px;
+}
+
+.card .content .description
+{
+}
+
+.card .content .links
+{
+}
+
+.card a
+{
+	text-decoration: none;
+}
+
+.card .content .links a
+{
+	color:   #2962FF;
+	margin:  8px 0;
+	display: block;
+	cursor:  pointer;
+}
+
+.card .fastAccess
+{
+}
+
+#recordModalWindow
+{
+	left: calc(50% - 300px / 2);
+}
+
+.loadingProgress
+{
+	opacity:      0;
+	height:       0;
+	background:   rgba(33, 150, 243, 0.5);
+	margin-left:  -24px;
+	margin-right: -14px;
+	transition:   opacity 0.2s linear, height 0.2s linear;
+	overflow:     hidden;
+}
+
+.loadingProgress.loading
+{
+	opacity: 1;
+	height:  5px;
+}
+
+.loadingProgress.loadError
+{
+	background: #F44336;
+}
+
+.loadingProgress .step
+{
+	height:     inherit;
+	position:   relative;
+	background: #2196F3;
+}
+
+.loadingProgress.loadError .step
+{
+	display: none;
+}
+
+.loadingProgress:not(.loadError) .step.indeterminate
+{
+	animation: indeterminateLoad 1.8s linear infinite;
+}
+
+.modalWindowWrapper
+{
+	position:         fixed;
+	top:              0;
+	left:             0;
+	height:           100%;
+	width:            100%;
+	display:          flex;
+	justify-content:  center;
+	align-items:      center;
+	z-index:          3;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalWindowWrapper .window
+{
+	background-color: #FFFFFF;
+	border-radius:    2px;
+	width:            300px;
+}
+
+.modalWindowWrapper .window .group
+{
+	max-height: 60vh;
+}
+
+@keyframes indeterminateLoad
+{
+	0%
+	{
+		width: 0;
+		left:  0;
+	}
+	50%
+	{
+		width: 40%;
+		left:  50%;
+	}
+	100%
+	{
+		width: 60%;
+		left:  100%;
+	}
+}
