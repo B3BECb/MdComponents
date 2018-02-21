@@ -13,10 +13,13 @@
 				 validator = "this.value && this.value.trim() ? true : false"
 				 type="text"
 				 style = "display: block; width: 300px; margin-top: 40px;"></validable-input>
+
+<video-player id="testPlayer" style="margin:60px; width: 600px; height: 300px;"></video-player>
 </body>
 <script>
 	Builder
 		.RegisterScript("Components/Elements/ValidableInput/ValidableInput.js")
+		.RegisterScript("Components/Elements/Videoplayer/Videoplayer.js")
 		.Build()
 		.AfterAll(() => Initialize());
 

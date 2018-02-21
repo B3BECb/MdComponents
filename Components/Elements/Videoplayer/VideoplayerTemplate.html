@@ -1,0 +1,130 @@
+<template id = "main">
+	<style>
+		@font-face
+		{
+			font-family: "Roboto";
+			src:         url("../Fonts/Roboto/Roboto-Regular.ttf");
+		}
+
+		:host
+		{
+			font-family: "Roboto";
+			display:     block;
+		}
+
+		.hidden
+		{
+			display: none;
+		}
+
+		.videoContainer
+		{
+			background-color: black;
+			position:         relative;
+			top:              0;
+			left:             0;
+			width:            100%;
+			height:           100%;
+		}
+
+		.videoContainer img,
+		.videoContainer video
+		{
+			max-width:  100%;
+			max-height: 100%;
+		}
+
+		.controlsContainer
+		{
+			display:        flex;
+			flex-direction: column;
+		}
+
+		.header
+		{
+			display:         flex;
+			justify-content: space-between;
+			height:          30px;
+		}
+
+		.representation
+		{
+			display: flex;
+		}
+
+		.sourceWindow
+		{
+			height: 100%;
+		}
+
+		.triggers
+		{
+			width:      30%;
+			overflow:   hidden;
+			overflow-y: auto;
+			height:     100%;
+		}
+
+		.controls
+		{
+			height:          30px;
+			display:         flex;
+			justify-content: space-between;
+		}
+
+	</style>
+	<div class = "playerLayersContainer">
+		<div class = "videoLayer">
+			<div class = "videoContainer">
+				<img src = "" />
+			</div>
+			<div class = "controlsContainer">
+				<div class = "header">
+					<span class = "name">Camera 1</span>
+					<span class = "settingsButton">O</span>
+				</div>
+				<div class = "representation">
+					<span class = "sourceWindow"></span>
+					<span class = "triggers">
+						<div class = "trigger button animated">Trigger 1</div>
+						<div class = "trigger button animated">New trigger 2</div>
+						<div class = "trigger button animated">aasdasdads</div>
+						<div class = "trigger button animated">adsfsdgsdgdsgsdgsdgsd sdsgsdgsd</div>
+						<div class = "trigger button animated">adfssfs sdfsdf ssdfsdfdsf</div>
+						<div class = "trigger button animated">Trigger 3</div>
+						<div class = "trigger button animated">Trigger 4</div>
+						<div class = "trigger button animated">Trigger 5</div>
+						<div class = "trigger button animated">Trigger 6</div>
+					</span>
+				</div>
+				<div class = "controls">
+					<span class = "group">
+						<span class = "button">V</span>
+						<span class = "button">X</span>
+					</span>
+					<span class = "group">
+						<span class = "button">[]</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class = "settingsLayer hidden">
+
+		</div>
+		<div class = "recognitionLayer hidden">
+
+		</div>
+	</div>
+</template>
+
+<template id = "trigger">
+	<div class = "trigger button animated"></div>
+</template>
+
+<template id = "imagePlayer">
+	<img src = "" />
+</template>
+
+<template id = "videoPlayer">
+	<video></video>
+</template>
