@@ -1,5 +1,5 @@
 Builder
-	.RegisterHtmlTemplate("Components/Elements/ValidableInput.ValidableInputTemplate.html",
+	.RegisterHtmlTemplate("Components/Elements/ValidableInput/ValidableInputTemplate.html",
 		(link) =>
 		{
 			ValidableInput.Link = document.querySelector('#' + link.ReferenceName);

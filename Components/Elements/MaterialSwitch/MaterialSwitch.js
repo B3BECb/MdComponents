@@ -1,5 +1,5 @@
 Builder
-	.RegisterHtmlTemplate("Components/Elements/MaterialSwitch.MaterialSwitchTemplate.html",
+	.RegisterHtmlTemplate("Components/Elements/MaterialSwitch/MaterialSwitchTemplate.html",
 		(link) =>
 		{
 			MaterialSwitch.Link = document.querySelector('#' + link.ReferenceName);
