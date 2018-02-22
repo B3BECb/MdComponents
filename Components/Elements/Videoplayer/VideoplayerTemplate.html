@@ -57,6 +57,11 @@
 			position:       absolute;
 		}
 
+		.line
+		{
+			background: rgba(0, 0, 0, 0.1);
+		}
+
 		.header
 		{
 			display:         flex;
@@ -84,7 +89,7 @@
 
 		.triggers
 		{
-			width:       200px;
+			flex-basis:  200px;
 			overflow:    hidden;
 			overflow-y:  auto;
 			white-space: nowrap;
@@ -92,6 +97,12 @@
 
 		.trigger
 		{
+		}
+
+		.button
+		{
+			cursor:     pointer;
+			transition: background 0.4s;
 		}
 
 		.trigger.button
@@ -114,10 +125,11 @@
 
 		.controls
 		{
-			height:          30px;
+			flex-basis:      35px;
 			display:         flex;
 			justify-content: space-between;
 			flex-shrink:     0;
+			overflow:        hidden;
 		}
 
 		.controls .group
@@ -138,14 +150,37 @@
 
 		.controls .button
 		{
-			background:    red;
-			height:        24px;
 			display:       flex;
 			width:         24px;
 			align-items:   center;
 			height:        100%;
 			padding-left:  8px;
 			padding-right: 8px;
+		}
+
+		.button.animated:hover
+		{
+			background: rgba(185, 185, 185, 0.30);
+		}
+
+		.button.animated:active
+		{
+			background: rgba(185, 185, 185, 0.40);
+		}
+
+		.hiding
+		{
+			transition: flex-basis 0.2s;
+		}
+
+		.triggers.hiding
+		{
+			transition-delay: 0.1s;
+		}
+
+		.layer:not(:hover) .hiding
+		{
+			flex-basis: 0;
 		}
 
 	</style>
@@ -156,12 +191,12 @@
 				<img src = "../frames/frame1.jpg" />
 			</div>
 			<div class = "controlsContainer">
-				<div class = "header">
+				<div class = "header line">
 					<span class = "name">Camera 1</span>
 				</div>
 				<div class = "representation">
 					<span class = "sourceWindow"></span>
-					<span class = "triggers">
+					<span class = "triggers hiding">
 						<div class = "trigger button animated">
 							<span class = "text">
 								Trigger 1
@@ -299,20 +334,20 @@
 						</div>
 					</span>
 				</div>
-				<div class = "controls">
+				<div class = "controls hiding line">
 					<span class = "group">
-						<span class = "button">
+						<span class = "button animated">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<path fill = "#FFF" d = "m5.44398,19.85892l6.5,-4l0,-8l-6.5,-4l0,16zm6.5,
 								-4l6.5,-4l0,0l-6.5,-4l0,8z" />
 							</svg>
 						</span>
-						<span class = "button hidden">
+						<span class = "button animated hidden">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<path fill = "#FFF" d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
 							</svg>
 						</span>
-						<span class = "button">
+						<span class = "button animated">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<path fill = "#FFF" d = "M10,2A2,2 0 0,1 12,4V8.5C12,
 								8.5 14,8.25 14,9.25C14,9.25 16,9 16,10C16,10 18,9.75 18,
@@ -322,7 +357,7 @@
 						</span>
 					</span>
 					<span class = "group">
-						<span class = "button">
+						<span class = "button animated">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<path d = "m17.87617,12.82255c0.03,-0.25 0.05,-0.51 0.05,
 								-0.78c0,-0.27 -0.02,-0.52 -0.05,-0.78l1.68,-1.32c0.15,
@@ -341,7 +376,7 @@
 								-2.8c1.54,0 2.8,1.25 2.8,2.8c0,1.54 -1.25,2.8 -2.8,2.8l0,0z" fill = "#fff"></path>
 							</svg>
 						</span>
-						<span class = "button">
+						<span class = "button animated">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<g>
 									<path fill = "#FFF"
