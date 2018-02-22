@@ -15,7 +15,7 @@
 
 		.hidden
 		{
-			display: none;
+			display: none !important;
 		}
 
 		.playerLayersContainer
@@ -120,6 +120,12 @@
 			flex-shrink:     0;
 		}
 
+		.controls .group
+		{
+			display:        flex;
+			flex-direction: row;
+		}
+
 		.controls .group:first-child
 		{
 			margin-left: 8px;
@@ -132,10 +138,14 @@
 
 		.controls .button
 		{
-			background: red;
-			height:     24px;
-			display:    inline-block;
-			width:      24px;
+			background:    red;
+			height:        24px;
+			display:       flex;
+			width:         24px;
+			align-items:   center;
+			height:        100%;
+			padding-left:  8px;
+			padding-right: 8px;
 		}
 
 	</style>
@@ -292,34 +302,27 @@
 				<div class = "controls">
 					<span class = "group">
 						<span class = "button">
-							<span>
-								<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
-									<path fill = "#FFF" d = "m5.44398,19.85892l6.5,-4l0,-8l-6.5,-4l0,16zm6.5,
-									-4l6.5,-4l0,0l-6.5,-4l0,8z" />
-								</svg>
-							</span>
+							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
+								<path fill = "#FFF" d = "m5.44398,19.85892l6.5,-4l0,-8l-6.5,-4l0,16zm6.5,
+								-4l6.5,-4l0,0l-6.5,-4l0,8z" />
+							</svg>
 						</span>
 						<span class = "button hidden">
-							<span>
-								<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
-									<path fill = "#FFF" d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
-								</svg>
-							</span>
+							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
+								<path fill = "#FFF" d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
+							</svg>
 						</span>
 						<span class = "button">
-							<span>
-								<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
-									<path fill = "#FFF" d = "M10,2A2,2 0 0,1 12,4V8.5C12,
-									8.5 14,8.25 14,9.25C14,9.25 16,9 16,10C16,10 18,9.75 18,
-									10.75C18,10.75 20,10.5 20,11.5V15C20,16 17,21 17,22H9C9,
-									22 7,15 4,13C4,13 3,7 8,12V4A2,2 0 0,1 10,2Z" />
-								</svg>
-							</span>
+							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
+								<path fill = "#FFF" d = "M10,2A2,2 0 0,1 12,4V8.5C12,
+								8.5 14,8.25 14,9.25C14,9.25 16,9 16,10C16,10 18,9.75 18,
+								10.75C18,10.75 20,10.5 20,11.5V15C20,16 17,21 17,22H9C9,
+								22 7,15 4,13C4,13 3,7 8,12V4A2,2 0 0,1 10,2Z" />
+							</svg>
 						</span>
 					</span>
 					<span class = "group">
-					<span class = "button">
-						<span>
+						<span class = "button">
 							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
 								<path d = "m17.87617,12.82255c0.03,-0.25 0.05,-0.51 0.05,
 								-0.78c0,-0.27 -0.02,-0.52 -0.05,-0.78l1.68,-1.32c0.15,
@@ -338,29 +341,26 @@
 								-2.8c1.54,0 2.8,1.25 2.8,2.8c0,1.54 -1.25,2.8 -2.8,2.8l0,0z" fill = "#fff"></path>
 							</svg>
 						</span>
-					</span>
 						<span class = "button">
-							<span>
-								<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
-									<g>
-										<path fill = "#FFF"
-											  d = "m4.16667,10.31818l2,0l0,-4l4,0l0,-2l-6,0l0,6l0,0z"></path>
-									</g>
-									<g>
-										<path fill = "#FFF"
-											  d = "m14.16667,4.31818l0,2l4,0l0,4l2,0l0,-6l-6,0l0,0z"></path>
-									</g>
-									<g>
-										<path fill = "#FFF"
-											  d = "m18.16667,18.31818l-4,0l0,2l6,0l0,-6l-2,0l0,4l0,0z"></path>
-									</g>
-									<g>
-										<path fill = "#FFF"
-											  d = "m6.16667,14.31818l-2,0l0,6l6,0l0,-2l-4,0l0,-4l0,0z"></path>
-									</g>
-								</svg>
-							</span>
-						</span>
+							<svg style = "width:24px;height:24px" viewBox = "0 0 24 24">
+								<g>
+									<path fill = "#FFF"
+										  d = "m4.16667,10.31818l2,0l0,-4l4,0l0,-2l-6,0l0,6l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m14.16667,4.31818l0,2l4,0l0,4l2,0l0,-6l-6,0l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m18.16667,18.31818l-4,0l0,2l6,0l0,-6l-2,0l0,4l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m6.16667,14.31818l-2,0l0,6l6,0l0,-2l-4,0l0,-4l0,0z"></path>
+								</g>
+							</svg>
+					</span>
 					</span>
 				</div>
 			</div>
