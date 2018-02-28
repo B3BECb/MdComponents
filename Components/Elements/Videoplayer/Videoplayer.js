@@ -1,19 +1,24 @@
 Builder
-	.RegisterHtmlTemplate("Components/Elements/Videoplayer/VideoplayerTemplate.html",
-		(link) =>
-		{
-			Videoplayer.Link = document.querySelector('#' + link.ReferenceName);
+.RegisterHtmlTemplate("Components/Elements/Videoplayer/VideoplayerTemplate.html",
+	(link) =>
+	{
+		Videoplayer.Link = document.querySelector('#' + link.ReferenceName);
 
-			window.customElements.define('video-player', Videoplayer);
-		});
+		window.customElements.define('video-player', Videoplayer);
+	});
 
-class Videoplayer extends HTMLElement
+class Videoplayer
+	extends HTMLElement
 {
 	constructor()
 	{
 		super();
 
 		this.InsertTemplate();
+
+		this._configuration = null;
+
+		this._isPlayerStarted = false;
 	}
 
 	InsertTemplate()
@@ -23,18 +28,198 @@ class Videoplayer extends HTMLElement
 		var shadow = this.createShadowRoot();
 
 		shadow.appendChild(content.cloneNode(true));
+
+		this._BindCommands();
 	}
 
 	Configure(configuration)
 	{
+		if(this._configuration)
+		{
+			throw 'Player already configured';
+		}
 
+		var ConfigureTriggers = () =>
+		{
+			var triggers = this.shadowRoot.querySelector('.playerLayersContainer .video.layer .triggers');
+
+			configuration.Triggers.forEach(
+				(trigger) =>
+				{
+					let triggerNode = Videoplayer.Link.import.querySelector('template#trigger').content.cloneNode(true);
+					triggerNode.querySelector('.text').textContent = trigger.TriggerName;
+					let button = triggerNode.querySelector('.trigger.button');
+					button.dataset.Id = trigger.TriggerId;
+					button.addEventListener('click',
+						() =>
+						{
+							this.dispatchEvent(new CustomEvent("triggerActivated",
+								{
+									detail: trigger,
+								}));
+						});
+					triggers.appendChild(triggerNode);
+				},
+			);
+		};
+
+		var ConfigureSettings = () =>
+		{
+			var settingsPages = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .pages');
+			var settingsList = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .triggers');
+
+			configuration.Layers.SettingsLayer.forEach(
+				(page) =>
+				{
+					let settingsPage = document.createElement('div');
+					settingsPage.classList.add('page');
+					settingsPage.appendChild(page.Node);
+					settingsPages.appendChild(settingsPage);
+
+					let link = Videoplayer.Link.import.querySelector('template#link').content.cloneNode(true);
+					link.querySelector('.text').textContent = page.Name;
+					settingsList.appendChild(link);
+
+				},
+			);
+		};
+
+		var ConfigurePlayerName = () =>
+		{
+			var playerNameNode = this.shadowRoot.querySelector(
+				'.playerLayersContainer .video.layer .header.line .name');
+			playerNameNode.textContent = configuration.Name;
+		};
+
+		var ConfigurePlayerSource = () =>
+		{
+			switch(configuration.PlayerType)
+			{
+				case 0:
+					var playerSourceNode = this.shadowRoot.querySelector(
+						'.playerLayersContainer .video.layer .videoContainer');
+					let sourceNode = Videoplayer.Link.import.querySelector('template#imagePlayer')
+												.content
+												.cloneNode(true);
+					playerSourceNode.appendChild(sourceNode);
+					break;
+			}
+		};
+
+		ConfigurePlayerName();
+		ConfigurePlayerSource();
+		ConfigureTriggers();
+		ConfigureSettings();
+
+		this._configuration = configuration;
+	}
+
+	Start()
+	{
+		this.shadowRoot.querySelector('#StartBtn').classList.add('hidden');
+		this.shadowRoot.querySelector('#StopBtn').classList.remove('hidden');
+
+		switch(this._configuration.PlayerType)
+		{
+			case 0:
+				var imageNode = this.shadowRoot.querySelector('.sourceNode');
+				imageNode.addEventListener('load', this._Reload);
+				imageNode.src = `${this._configuration.Source}&temp=${Date.now()}`;
+				break;
+		}
+		this._isPlayerStarted = !this._isPlayerStarted;
+
+		this.dispatchEvent(new CustomEvent("playerStarted",
+			{
+				detail: this,
+			}));
+	}
+
+	Stop()
+	{
+		this.shadowRoot.querySelector('#StopBtn').classList.add('hidden');
+		this.shadowRoot.querySelector('#StartBtn').classList.remove('hidden');
+
+		switch(this._configuration.PlayerType)
+		{
+			case 0:
+				this.shadowRoot.querySelector('.sourceNode').removeEventListener('load', this._Reload);
+				break;
+		}
+		this._isPlayerStarted = !this._isPlayerStarted;
+
+		this.dispatchEvent(new CustomEvent("playerStopped",
+			{
+				detail: this,
+			}));
+	}
+
+	get IsPlayerStarted()
+	{
+		return this._isPlayerStarted;
+	}
+
+	_BindCommands()
+	{
+		var BindPlayerCommands = () =>
+		{
+			var startBtn = this.shadowRoot.querySelector('#StartBtn');
+			startBtn.addEventListener('click',
+				() =>
+				{
+					this.Start();
+				},
+			);
+
+			var stopBtn = this.shadowRoot.querySelector('#StopBtn');
+			stopBtn.addEventListener('click',
+				() =>
+				{
+					this.Stop();
+				},
+			);
+		};
+
+		var BinExpandCommand = null;
+
+		var BinSettingsCommands = () =>
+		{
+			var settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
+			settingsBtn.addEventListener('click',
+				() =>
+				{
+					if(this._isPlayerStarted)
+					{
+						this.Stop();
+					}
+
+					this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
+					this.shadowRoot.querySelector('.settings.layer').classList.remove('hidden');
+					this.dispatchEvent(new CustomEvent("settingsOpened",
+						{
+							detail: this,
+						}));
+				},
+			);
+		};
+
+		var BinRecognitionCommands = null;
+
+		BindPlayerCommands();
+		BinSettingsCommands();
+	}
+
+	_Reload(args)
+	{
+		var url = args.target.currentSrc.split('&temp=')[0];
+		args.target.src = `${url}&temp=${Date.now()}`;
 	}
 
 	static Types()
 	{
 		return {
 			Image: 0,
-			Video: 1.
+			Video: 1.,
 		};
 	}
 }
@@ -50,6 +235,7 @@ class Videoplayer extends HTMLElement
  */
 class VideoplayerConfiguration
 {
+	//TODO: передавать конфигурацию отображаемых кнопок. Управляющие кнопки по умолчанию не должны быть видны
 	constructor(source, playerType, layers, name = "", triggers = [])
 	{
 		this.Triggers = triggers;
@@ -78,14 +264,24 @@ class VideoplayerTrigger
 /**
  * Настройки слоёв плеера
  * Праметры конструктора:
- * settingsLayer - настройки слоя настроек
- * recognitionLayer - настройки слоя распознавания
+ * settingsLayerPages - страницы слоя настроек
+ * recognitionLayerPages - страницы слоя распознавания
  */
 class VideoplayerLayers
 {
-	constructor(settingsLayer = null, recognitionLayer = null)
+	//TODO: добавить имена для слоёв
+	constructor(settingsLayerPages = [], recognitionLayerPages = [])
 	{
-		this.SettingsLayer = settingsLayer;
-		this.RecognitionLayer = recognitionLayer;
+		this.SettingsLayer = settingsLayerPages;
+		this.RecognitionLayer = recognitionLayerPages;
+	}
+}
+
+class LayerPage
+{
+	constructor(name, node)
+	{
+		this.Name = name;
+		this.Node = node;
 	}
 }
