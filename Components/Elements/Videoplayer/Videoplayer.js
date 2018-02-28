@@ -119,6 +119,9 @@ class Videoplayer
 											{
 												button: btn,
 												page:   page,
+												pages:  this.shadowRoot.querySelectorAll(
+													'.playerLayersContainer .settings.layer .pages .page'),
+												player: this,
 											},
 									}));
 							},
@@ -349,7 +352,7 @@ class Videoplayer
 				);
 			};
 
-			let BindCloseBtn = () =>
+			let BindAbortBtn = () =>
 			{
 				this.shadowRoot.querySelector("#AbortSettingsBtn")
 					.addEventListener('click',
@@ -361,7 +364,12 @@ class Videoplayer
 							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsAborted",
 								{
-									detail: this,
+									detail:
+										{
+											pages:  this.shadowRoot.querySelectorAll(
+												'.playerLayersContainer .settings.layer .pages .page'),
+											player: this,
+										},
 								}));
 							this.dispatchEvent(new CustomEvent("settingsClosed",
 								{
@@ -382,7 +390,12 @@ class Videoplayer
 							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsApplied",
 								{
-									detail: this,
+									detail:
+										{
+											pages:  this.shadowRoot.querySelectorAll(
+												'.playerLayersContainer .settings.layer .pages .page'),
+											player: this,
+										},
 								}));
 							this.dispatchEvent(new CustomEvent("settingsClosed",
 								{
@@ -393,7 +406,7 @@ class Videoplayer
 
 			BindApplyBtn();
 			BindOpenSettings();
-			BindCloseBtn();
+			BindAbortBtn();
 		};
 
 		var BindRecognitionCommands = null;

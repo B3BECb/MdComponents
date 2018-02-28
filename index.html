@@ -44,8 +44,18 @@
 			CreateLayers(),
 			'Camera 1 | Real', CreateTriggers());
 
+		BindEvents();
+
+		test.Configure(configuration);
+
+		test.Start();
+	}
+
+	function BindEvents()
+	{
+		// trigger activation
 		test.addEventListener('triggerActivated',
-			(args) => alert(`${args.detail.TriggerId} ${args.detail.TriggerName}`));
+			(args) => console.log(`activated trigger: id=${args.detail.TriggerId} name=${args.detail.TriggerName}`));
 
 		// start/stop
 		test.addEventListener('playerStarted',
@@ -70,11 +80,6 @@
 			() => console.log("player settings aborted"));
 		test.addEventListener('settingsPageChanged',
 			() => console.log("player settings page changed"));
-
-
-		test.Configure(configuration);
-
-		test.Start();
 	}
 
 	function CreateTriggers()
