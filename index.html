@@ -47,10 +47,30 @@
 		test.addEventListener('triggerActivated',
 			(args) => alert(`${args.detail.TriggerId} ${args.detail.TriggerName}`));
 
+		// start/stop
 		test.addEventListener('playerStarted',
 			() => console.log("player started"));
 		test.addEventListener('playerStopped',
 			() => console.log("player stopped"));
+
+		// expand/collapse
+		test.addEventListener('playerExpanded',
+			() => console.log("player expanded"));
+		test.addEventListener('playerCollapsed',
+			() => console.log("player collapsed"));
+
+		//settings open/apply/abort/close/pageChanged
+		test.addEventListener('settingsOpened',
+			() => console.log("player settings oppened"));
+		test.addEventListener('settingsClosed',
+			() => console.log("player settings closed"));
+		test.addEventListener('settingsApplied',
+			() => console.log("player settings applied"));
+		test.addEventListener('settingsAborted',
+			() => console.log("player settings aborted"));
+		test.addEventListener('settingsPageChanged',
+			() => console.log("player settings page changed"));
+
 
 		test.Configure(configuration);
 
@@ -71,26 +91,36 @@
 
 	function CreateLayers()
 	{
-		var templetePege = document.querySelector('#tp').content.cloneNode(true);
-		//templetePege.querySelector('#plate').addEventListener('valueChanged', () => alert(123));
-		templetePege.querySelector('#mdSwitch').addEventListener('valueChanged', () => alert(1));
+		var pages = [];
 
-		var layers = new VideoplayerLayers([new LayerPage('Plate', templetePege)]);
+		var templetePege = document.querySelector('#tp').content.cloneNode(true);
+		templetePege.querySelector('#mdSwitch').addEventListener('valueChanged', () => alert(1));
+		pages.push(new LayerPage('Triggers settings', templetePege));
+
+		templetePege = document.querySelector('#tp2').content.cloneNode(true);
+		templetePege.querySelector('#plate').addEventListener('valueChanged', (args) => console.info(args.detail));
+		pages.push(new LayerPage('test page 2', templetePege));
+
+		var settingsLayer = new VideoplayerLayer('Settings | Test player', pages);
+		var layers = new VideoplayerLayers(settingsLayer);
 		return layers;
 	}
 </script>
 <template id = "tp">
 	<div style = "width: 200px;">
-		<!--<validable-input id = "plate"
-						 title = "plate"
-						 noCollapse
-						 type = "text"
-						 style = "display: block; width: 200px;"></validable-input>-->
-
 		<div style = "display: flex; flex-direction: row; align-items: center;">
 			<span style = "margin-right: 8px;">Отображать триггеры</span>
 			<material-switch id = "mdSwitch"></material-switch>
 		</div>
+	</div>
+</template>
+<template id = "tp2">
+	<div style = "width: 200px;">
+		<validable-input id = "plate"
+						 title = "plate"
+						 noCollapse
+						 type = "text"
+						 style = "display: block; width: 200px;"></validable-input>
 	</div>
 </template>
 </html>

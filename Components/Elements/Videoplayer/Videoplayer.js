@@ -65,23 +65,72 @@ class Videoplayer
 
 		var ConfigureSettings = () =>
 		{
-			var settingsPages = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .pages');
-			var settingsList = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .triggers');
+			let ConfigureName = (name) =>
+			{
+				let settingsName = this.shadowRoot.querySelector(
+					'.playerLayersContainer .settings.layer .header.line .name');
+				settingsName.textContent = name;
+			};
 
-			configuration.Layers.SettingsLayer.forEach(
-				(page) =>
-				{
-					let settingsPage = document.createElement('div');
-					settingsPage.classList.add('page');
-					settingsPage.appendChild(page.Node);
-					settingsPages.appendChild(settingsPage);
+			let ConfigurePages = (pages) =>
+			{
+				let settingsPages = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .pages');
+				let settingsList = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .triggers');
 
-					let link = Videoplayer.Link.import.querySelector('template#link').content.cloneNode(true);
-					link.querySelector('.text').textContent = page.Name;
-					settingsList.appendChild(link);
+				pages.forEach(
+					(page, index) =>
+					{
+						let id = 'page' + index;
+						let settingsPage = document.createElement('div');
+						settingsPage.classList.add('page');
+						settingsPage.classList.add('hidden');
+						settingsPage.dataset.id = id;
+						settingsPage.appendChild(page.Node);
+						settingsPages.appendChild(settingsPage);
 
-				},
-			);
+						let link = Videoplayer.Link.import.querySelector('template#link').content.cloneNode(true);
+						link.querySelector('.text').textContent = page.Name;
+						let trigger = link.querySelector('.link.button.trigger');
+						trigger.dataset.id = id;
+						trigger.addEventListener('click',
+							(args) =>
+							{
+								let btn = args.currentTarget;
+								if(btn.classList.contains('markared'))
+								{
+									return;
+								}
+
+								this.shadowRoot.querySelector(
+									'.playerLayersContainer .settings.layer .triggers .trigger.markared')
+									.classList.remove('markared');
+								this.shadowRoot.querySelector(
+									'.playerLayersContainer .settings.layer .pages .page:not(.hidden)')
+									.classList.add('hidden');
+
+								btn.classList.add('markared');
+								let page = this.shadowRoot.querySelector(
+									`.playerLayersContainer .settings.layer .pages .page[data-id='${btn.dataset.id}']`);
+								page.classList.remove('hidden');
+
+								this.dispatchEvent(new CustomEvent("settingsPageChanged",
+									{
+										detail:
+											{
+												button: btn,
+												page:   page,
+											},
+									}));
+							},
+						);
+						settingsList.appendChild(link);
+
+					},
+				);
+			};
+
+			ConfigureName(configuration.Layers.SettingsLayer.Name);
+			ConfigurePages(configuration.Layers.SettingsLayer.Pages);
 		};
 
 		var ConfigurePlayerName = () =>
@@ -215,7 +264,17 @@ class Videoplayer
 			btns.forEach(
 				(btn) =>
 				{
-					btn.addEventListener('click', () => this.classList.add('fullScreen'));
+					btn.addEventListener('click',
+						() =>
+						{
+							this.classList.add('fullScreen');
+
+							this.dispatchEvent(new CustomEvent("playerExpanded",
+								{
+									detail: this,
+								}));
+						},
+					);
 				});
 		};
 
@@ -226,29 +285,115 @@ class Videoplayer
 			btns.forEach(
 				(btn) =>
 				{
-					btn.addEventListener('click', () => this.classList.remove('fullScreen'));
+					btn.addEventListener('click',
+						() =>
+						{
+							this.classList.remove('fullScreen');
+
+							this.dispatchEvent(new CustomEvent("playerCollapsed",
+								{
+									detail: this,
+								}));
+						},
+					);
 				});
 		};
 
 		var BindSettingsCommands = () =>
 		{
-			var settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
-			settingsBtn.addEventListener('click',
-				() =>
-				{
-					if(this._isPlayerStarted)
+			let BindOpenSettings = () =>
+			{
+				var settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
+				settingsBtn.addEventListener('click',
+					() =>
 					{
-						this.Stop();
-					}
-
-					this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
-					this.shadowRoot.querySelector('.settings.layer').classList.remove('hidden');
-					this.dispatchEvent(new CustomEvent("settingsOpened",
+						if(this._isPlayerStarted)
 						{
-							detail: this,
-						}));
-				},
-			);
+							this.Stop();
+						}
+
+						this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
+						this.shadowRoot.querySelector('.settings.layer').classList.remove('hidden');
+
+						this.shadowRoot.querySelectorAll(
+							'.playerLayersContainer .settings.layer .pages .page:not(.hidden)')
+							.forEach(
+								(node) =>
+								{
+									node.classList.add('hidden');
+								});
+
+						this.shadowRoot.querySelectorAll(
+							'.playerLayersContainer .settings.layer .triggers .trigger.markared')
+							.forEach(
+								(node) =>
+								{
+									node.classList.remove('markared');
+								});
+
+						this.shadowRoot.querySelector(
+							'.playerLayersContainer .settings.layer .pages .page:first-child')
+							.classList
+							.remove('hidden');
+
+						this.shadowRoot.querySelector(
+							'.playerLayersContainer .settings.layer .triggers .trigger:first-child')
+							.classList
+							.add('markared');
+
+						this.dispatchEvent(new CustomEvent("settingsOpened",
+							{
+								detail: this,
+							}));
+					},
+				);
+			};
+
+			let BindCloseBtn = () =>
+			{
+				this.shadowRoot.querySelector("#AbortSettingsBtn")
+					.addEventListener('click',
+						() =>
+						{
+							this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
+							this.shadowRoot.querySelector('.settings.layer').classList.add('hidden');
+
+							this.Start();
+							this.dispatchEvent(new CustomEvent("settingsAborted",
+								{
+									detail: this,
+								}));
+							this.dispatchEvent(new CustomEvent("settingsClosed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			let BindApplyBtn = () =>
+			{
+				this.shadowRoot.querySelector("#ApplySettingsBtn")
+					.addEventListener('click',
+						() =>
+						{
+							this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
+							this.shadowRoot.querySelector('.settings.layer').classList.add('hidden');
+
+							this.Start();
+							this.dispatchEvent(new CustomEvent("settingsApplied",
+								{
+									detail: this,
+								}));
+							this.dispatchEvent(new CustomEvent("settingsClosed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			BindApplyBtn();
+			BindOpenSettings();
+			BindCloseBtn();
 		};
 
 		var BindRecognitionCommands = null;
@@ -320,10 +465,19 @@ class VideoplayerTrigger
 class VideoplayerLayers
 {
 	//TODO: добавить имена для слоёв
-	constructor(settingsLayerPages = [], recognitionLayerPages = [])
+	constructor(settingsLayerPages = null, recognitionLayerPages = null)
 	{
 		this.SettingsLayer = settingsLayerPages;
 		this.RecognitionLayer = recognitionLayerPages;
+	}
+}
+
+class VideoplayerLayer
+{
+	constructor(name, pages = [])
+	{
+		this.Name = name;
+		this.Pages = pages;
 	}
 }
 
