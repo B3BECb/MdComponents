@@ -13,6 +13,13 @@
 			color:       white;
 		}
 
+		:host(.fullScreen)
+		{
+			height:   100vh !important;
+			width:    100vw !important;
+			position: fixed !important;
+		}
+
 		.hidden
 		{
 			display: none !important;
@@ -139,30 +146,38 @@
 
 		.controls
 		{
-			flex-basis:      35px;
-			display:         flex;
-			justify-content: space-between;
-			flex-shrink:     0;
-			overflow:        hidden;
+			flex-basis:     35px;
+			display:        flex;
+			flex-direction: column;
+			flex-shrink:    0;
+			overflow:       hidden;
 		}
 
-		.controls .group
+		.groups
+		{
+			display:         flex;
+			flex-direction:  row;
+			justify-content: space-between;
+			flex-grow:       1;
+		}
+
+		.groups .group
 		{
 			display:        flex;
 			flex-direction: row;
 		}
 
-		.controls .group:first-child
+		.groups .group:first-child
 		{
 			margin-left: 8px;
 		}
 
-		.controls .group:last-child
+		.groups .group:last-child
 		{
 			margin-right: 12px;
 		}
 
-		.controls .button
+		.groups .button
 		{
 			display:       flex;
 			width:         24px;
@@ -251,13 +266,72 @@
 			color: #4285F4;
 		}
 
+		:host .loadingProgress
+		{
+			opacity:    0;
+			height:     0;
+			background: rgba(33, 150, 243, 0.5);
+			transition: opacity 0.2s linear, height 0.2s linear;
+			overflow:   hidden;
+		}
+
+		:host .loadingProgress.loading
+		{
+			opacity: 1;
+			height:  5px;
+		}
+
+		:host .loadingProgress.error
+		{
+			background: #F44336;
+		}
+
+		:host .loadingProgress .step
+		{
+			height:     inherit;
+			position:   relative;
+			background: #2196F3;
+		}
+
+		:host .loadingProgress.error .step
+		{
+			display: none;
+		}
+
+		:host .loadingProgress:not(.error) .step.indeterminate
+		{
+			animation: indeterminateLoad 1.8s linear infinite;
+		}
+
+		@keyframes indeterminateLoad
+		{
+			0%
+			{
+				width: 0;
+				left:  0;
+			}
+			50%
+			{
+				width: 40%;
+				left:  50%;
+			}
+			100%
+			{
+				width: 60%;
+				left:  100%;
+			}
+		}
+
+		:host(.fullScreen) .ExpandBtn,
+		:host(:not(.fullScreen)) .CollapseBtn
+		{
+			display: none;
+		}
+
 	</style>
 	<div class = "playerLayersContainer">
 		<div class = "video layer ">
 			<div class = "videoContainer">
-				<!--<img src = "http://распознаваниеномеров.рф:5050/api/v1/image?videochannel=1"
-					 style = "display: none;" />
-				<img src = "../frames/frame1.jpg" />-->
 			</div>
 			<div class = "controlsContainer">
 				<div class = "header line">
@@ -269,8 +343,13 @@
 					</span>
 				</div>
 				<div class = "controls hiding line">
-					<span class = "group">
-						<span id = "StartBtn" class = "button animated">
+					<div class = "loadingProgress loading">
+						<div class = "step indeterminate"></div>
+					</div>
+					<div class = "groups">
+						<span class = "group">
+						<span id = "StartBtn"
+							  class = "button animated">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<path fill = "#FFF"
@@ -278,14 +357,16 @@
 								-4l6.5,-4l0,0l-6.5,-4l0,8z" />
 							</svg>
 						</span>
-						<span id = "StopBtn" class = "button animated hidden">
+						<span id = "StopBtn"
+							  class = "button animated hidden">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<path fill = "#FFF"
 									  d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
 							</svg>
 						</span>
-						<span id = "ManualRecognitionBtn" class = "button animated">
+						<span id = "ManualRecognitionBtn"
+							  class = "button animated">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<path fill = "#FFF"
@@ -296,8 +377,9 @@
 							</svg>
 						</span>
 					</span>
-					<span class = "group">
-						<span id="SettingsBtn" class = "button animated">
+						<span class = "group">
+							<span id = "SettingsBtn"
+								  class = "button animated">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<path d = "m17.87617,12.82255c0.03,-0.25 0.05,-0.51 0.05,
@@ -318,7 +400,7 @@
 									  fill = "#fff"></path>
 							</svg>
 						</span>
-						<span class = "button animated ExpandBtn">
+							<span class = "button animated ExpandBtn">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<g>
@@ -339,7 +421,16 @@
 								</g>
 							</svg>
 					</span>
-					</span>
+							<span class = "button animated CollapseBtn">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#fff"
+										  d = "M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,
+										  8V10H14V5H16V8H19Z" />
+								</svg>
+							</span>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -358,34 +449,35 @@
 					</span>
 				</div>
 				<div class = "controls line">
-					<span class = "group">
-						<span class = "button animated">
-							<svg style = "width:24px;height:24px"
-								 viewBox = "0 0 24 24">
-								<path fill = "#FFF"
-									  d = "m5.44398,19.85892l6.5,-4l0,-8l-6.5,-4l0,16zm6.5,
-								-4l6.5,-4l0,0l-6.5,-4l0,8z" />
-							</svg>
+					<div class = "groups">
+						<span class = "group">
+							<span class = "button animated">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#FFF"
+										  d = "m5.44398,19.85892l6.5,-4l0,-8l-6.5,-4l0,16zm6.5,
+									-4l6.5,-4l0,0l-6.5,-4l0,8z" />
+								</svg>
+							</span>
+							<span class = "button animated hidden">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#FFF"
+										  d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
+								</svg>
+							</span>
+							<span class = "button animated">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#FFF"
+										  d = "M10,2A2,2 0 0,1 12,4V8.5C12,
+									8.5 14,8.25 14,9.25C14,9.25 16,9 16,10C16,10 18,9.75 18,
+									10.75C18,10.75 20,10.5 20,11.5V15C20,16 17,21 17,22H9C9,
+									22 7,15 4,13C4,13 3,7 8,12V4A2,2 0 0,1 10,2Z" />
+								</svg>
+							</span>
 						</span>
-						<span class = "button animated hidden">
-							<svg style = "width:24px;height:24px"
-								 viewBox = "0 0 24 24">
-								<path fill = "#FFF"
-									  d = "m17.42286,17.91091l-12,0l0,-12l12,0l0,12z" />
-							</svg>
-						</span>
-						<span class = "button animated">
-							<svg style = "width:24px;height:24px"
-								 viewBox = "0 0 24 24">
-								<path fill = "#FFF"
-									  d = "M10,2A2,2 0 0,1 12,4V8.5C12,
-								8.5 14,8.25 14,9.25C14,9.25 16,9 16,10C16,10 18,9.75 18,
-								10.75C18,10.75 20,10.5 20,11.5V15C20,16 17,21 17,22H9C9,
-								22 7,15 4,13C4,13 3,7 8,12V4A2,2 0 0,1 10,2Z" />
-							</svg>
-						</span>
-					</span>
-					<span class = "group">
+						<span class = "group">
 						<span class = "button animated">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
@@ -429,6 +521,7 @@
 							</svg>
 					</span>
 					</span>
+					</div>
 				</div>
 			</div>
 		</div>

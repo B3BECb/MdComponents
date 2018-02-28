@@ -101,6 +101,25 @@ class Videoplayer
 					let sourceNode = Videoplayer.Link.import.querySelector('template#imagePlayer')
 												.content
 												.cloneNode(true);
+					var loadingProgress = this.shadowRoot.querySelector('.video.layer .controls.line .loadingProgress');
+					sourceNode.querySelector('img').addEventListener('error',
+						(args) =>
+						{
+							loadingProgress.classList.add('error');
+							if(this._isPlayerStarted)
+							{
+								this.Stop();
+							}
+						});
+					sourceNode.querySelector('img').addEventListener('load',
+						(args) =>
+						{
+							if(loadingProgress.classList.contains('loading'))
+							{
+								loadingProgress.classList.remove('error');
+								loadingProgress.classList.remove('loading');
+							}
+						});
 					playerSourceNode.appendChild(sourceNode);
 					break;
 			}
@@ -118,6 +137,10 @@ class Videoplayer
 	{
 		this.shadowRoot.querySelector('#StartBtn').classList.add('hidden');
 		this.shadowRoot.querySelector('#StopBtn').classList.remove('hidden');
+
+		var loadingProgress = this.shadowRoot.querySelector('.video.layer .controls.line .loadingProgress');
+		loadingProgress.classList.remove('error');
+		loadingProgress.classList.add('loading');
 
 		switch(this._configuration.PlayerType)
 		{
@@ -143,7 +166,9 @@ class Videoplayer
 		switch(this._configuration.PlayerType)
 		{
 			case 0:
-				this.shadowRoot.querySelector('.sourceNode').removeEventListener('load', this._Reload);
+				var imageNode = this.shadowRoot.querySelector('.sourceNode');
+				imageNode.removeEventListener('load', this._Reload);
+				imageNode.src = "";
 				break;
 		}
 		this._isPlayerStarted = !this._isPlayerStarted;
@@ -175,14 +200,37 @@ class Videoplayer
 			stopBtn.addEventListener('click',
 				() =>
 				{
+					var loadingProgress = this.shadowRoot.querySelector('.video.layer .controls.line .loadingProgress');
+					loadingProgress.classList.remove('error');
+					loadingProgress.classList.remove('loading');
 					this.Stop();
 				},
 			);
 		};
 
-		var BinExpandCommand = null;
+		var BindExpandCommand = () =>
+		{
+			let btns = this.shadowRoot.querySelectorAll('.ExpandBtn');
 
-		var BinSettingsCommands = () =>
+			btns.forEach(
+				(btn) =>
+				{
+					btn.addEventListener('click', () => this.classList.add('fullScreen'));
+				});
+		};
+
+		var BindCollapseCommand = () =>
+		{
+			let btns = this.shadowRoot.querySelectorAll('.CollapseBtn');
+
+			btns.forEach(
+				(btn) =>
+				{
+					btn.addEventListener('click', () => this.classList.remove('fullScreen'));
+				});
+		};
+
+		var BindSettingsCommands = () =>
 		{
 			var settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
 			settingsBtn.addEventListener('click',
@@ -203,10 +251,12 @@ class Videoplayer
 			);
 		};
 
-		var BinRecognitionCommands = null;
+		var BindRecognitionCommands = null;
 
+		BindExpandCommand();
+		BindCollapseCommand();
 		BindPlayerCommands();
-		BinSettingsCommands();
+		BindSettingsCommands();
 	}
 
 	_Reload(args)
