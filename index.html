@@ -80,6 +80,18 @@
 			() => console.log("player settings aborted"));
 		test.addEventListener('settingsPageChanged',
 			() => console.log("player settings page changed"));
+
+		//settings open/apply/abort/close/pageChanged
+		test.addEventListener('recognitionOpened',
+			() => console.log("player recognition oppened"));
+		test.addEventListener('recognitionClosed',
+			() => console.log("player recognition closed"));
+		test.addEventListener('recognitionApplied',
+			() => console.log("player recognition applied"));
+		test.addEventListener('recognitionAborted',
+			() => console.log("player recognition aborted"));
+		//test.addEventListener('settingsPageChanged',
+		//	() => console.log("player recognition page changed"));
 	}
 
 	function CreateTriggers()

@@ -302,8 +302,56 @@ class Videoplayer
 				});
 		};
 
+		var OpenLayer = (layerName) =>
+		{
+			this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
+			this.shadowRoot.querySelector(`.${layerName}.layer`).classList.remove('hidden');
+
+			this.shadowRoot.querySelectorAll(
+				`.playerLayersContainer .${layerName}.layer .pages .page:not(.hidden)`)
+				.forEach(
+					(node) =>
+					{
+						node.classList.add('hidden');
+					});
+
+			this.shadowRoot.querySelectorAll(
+				`.playerLayersContainer .${layerName}.layer .triggers .trigger.markared`)
+				.forEach(
+					(node) =>
+					{
+						node.classList.remove('markared');
+					});
+
+			let firstPage = this.shadowRoot.querySelector(
+				`.playerLayersContainer .${layerName}.layer .pages .page:first-child`);
+
+			if(firstPage)
+			{
+				firstPage.classList
+						 .remove('hidden');
+			}
+
+			let firstLink = this.shadowRoot.querySelector(
+				`.playerLayersContainer .${layerName}.layer .triggers .trigger:first-child`);
+
+			if(firstLink)
+			{
+				firstLink.classList
+						 .add('markared');
+			}
+		};
+
+		var CloseLayer = (layerName) =>
+		{
+			this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
+			this.shadowRoot.querySelector(`.${layerName}.layer`).classList.add('hidden');
+		};
+
 		var BindSettingsCommands = () =>
 		{
+			const layerName = 'settings';
+
 			let BindOpenSettings = () =>
 			{
 				var settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
@@ -315,34 +363,7 @@ class Videoplayer
 							this.Stop();
 						}
 
-						this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
-						this.shadowRoot.querySelector('.settings.layer').classList.remove('hidden');
-
-						this.shadowRoot.querySelectorAll(
-							'.playerLayersContainer .settings.layer .pages .page:not(.hidden)')
-							.forEach(
-								(node) =>
-								{
-									node.classList.add('hidden');
-								});
-
-						this.shadowRoot.querySelectorAll(
-							'.playerLayersContainer .settings.layer .triggers .trigger.markared')
-							.forEach(
-								(node) =>
-								{
-									node.classList.remove('markared');
-								});
-
-						this.shadowRoot.querySelector(
-							'.playerLayersContainer .settings.layer .pages .page:first-child')
-							.classList
-							.remove('hidden');
-
-						this.shadowRoot.querySelector(
-							'.playerLayersContainer .settings.layer .triggers .trigger:first-child')
-							.classList
-							.add('markared');
+						OpenLayer(layerName);
 
 						this.dispatchEvent(new CustomEvent("settingsOpened",
 							{
@@ -358,8 +379,7 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
-							this.shadowRoot.querySelector('.settings.layer').classList.add('hidden');
+							CloseLayer(layerName);
 
 							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsAborted",
@@ -384,8 +404,7 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
-							this.shadowRoot.querySelector('.settings.layer').classList.add('hidden');
+							CloseLayer(layerName);
 
 							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsApplied",
@@ -404,17 +423,100 @@ class Videoplayer
 						});
 			};
 
-			BindApplyBtn();
 			BindOpenSettings();
+			BindApplyBtn();
 			BindAbortBtn();
 		};
 
-		var BindRecognitionCommands = null;
+		var BindRecognitionCommands = () =>
+		{
+			const layerName = 'recognition';
+
+			let BindOpenRecognition = () =>
+			{
+				var recognitionBtn = this.shadowRoot.querySelector('#ManualRecognitionBtn');
+				recognitionBtn.addEventListener('click',
+					() =>
+					{
+						if(this._isPlayerStarted)
+						{
+							//TODO: Сунуть в изображение данные другого изображения
+
+							this.Stop();
+						}
+
+						OpenLayer(layerName);
+
+						this.dispatchEvent(new CustomEvent("recognitionOpened",
+							{
+								detail: this,
+							}));
+					});
+			};
+
+			let BindAbortBtn = () =>
+			{
+				this.shadowRoot.querySelector("#AbortRecognitionBtn")
+					.addEventListener('click',
+						() =>
+						{
+							this.shadowRoot.querySelector("#FrameImg").src = '';
+							CloseLayer(layerName);
+
+							this.Start();
+							this.dispatchEvent(new CustomEvent("recognitionAborted",
+								{
+									detail:
+										{
+											pages:  this.shadowRoot.querySelectorAll(
+												`.playerLayersContainer .${layerName}.layer .pages .page`),
+											player: this,
+										},
+								}));
+							this.dispatchEvent(new CustomEvent("recognitionClosed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			let BindRecognizeBtn = () =>
+			{
+				this.shadowRoot.querySelector("#RecognizeBtn")
+					.addEventListener('click',
+						() =>
+						{
+							this.shadowRoot.querySelector("#FrameImg").src = '';
+							CloseLayer(layerName);
+
+							this.Start();
+							this.dispatchEvent(new CustomEvent("recognitionApplied",
+								{
+									detail:
+										{
+											pages:  this.shadowRoot.querySelectorAll(
+												`.playerLayersContainer .${layerName}.layer .pages .page`),
+											imageData: null, //TODO:Получить данные изображения
+											player: this,
+										},
+								}));
+							this.dispatchEvent(new CustomEvent("recognitionClosed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			BindOpenRecognition();
+			BindRecognizeBtn();
+			BindAbortBtn();
+		};
 
 		BindExpandCommand();
 		BindCollapseCommand();
 		BindPlayerCommands();
 		BindSettingsCommands();
+		BindRecognitionCommands();
 	}
 
 	_Reload(args)
@@ -477,7 +579,6 @@ class VideoplayerTrigger
  */
 class VideoplayerLayers
 {
-	//TODO: добавить имена для слоёв
 	constructor(settingsLayerPages = null, recognitionLayerPages = null)
 	{
 		this.SettingsLayer = settingsLayerPages;

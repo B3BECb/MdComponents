@@ -323,7 +323,9 @@
 		}
 
 		:host(.fullScreen) .ExpandBtn,
-		:host(:not(.fullScreen)) .CollapseBtn
+		:host(:not(.fullScreen)) .CollapseBtn,
+		.videoContainer.hidden + .controlsContainer #ShowFormBtn,
+		.videoContainer:not(.hidden) + .controlsContainer #ShowFrameBtn
 		{
 			display: none;
 		}
@@ -434,7 +436,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = "settings hidden layer">
+		<div class = "settings layer hidden">
 			<div class = "controlsContainer">
 				<div class = "main line">
 					<span class = "content">
@@ -451,14 +453,16 @@
 				<div class = "controls line">
 					<div class = "groups">
 						<span class = "group">
-							<span id="ApplySettingsBtn" class = "button animated">
+							<span id = "ApplySettingsBtn"
+								  class = "button animated">
 								<svg style = "width:24px;height:24px"
 									 viewBox = "0 0 24 24">
 									<path fill = "#fff"
 										  d = "M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
 								</svg>
 							</span>
-							<span id="AbortSettingsBtn" class = "button animated">
+							<span id = "AbortSettingsBtn"
+								  class = "button animated">
 								<svg style = "width:24px;height:24px"
 									 viewBox = "0 0 24 24">
 									<path fill = "#fff"
@@ -503,7 +507,92 @@
 			</div>
 		</div>
 		<div class = "recognition layer hidden">
+			<div class = "videoContainer hidden">
+				<img id = "FrameImg" />
+			</div>
+			<div class = "controlsContainer">
+				<div class = "main line">
+					<span class = "content">
+						<div class = "header line">
+							<span class = "name"></span>
+						</div>
+						<div class = "pages">
+						</div>
+					</span>
+					<span class = "triggers">
 
+					</span>
+				</div>
+				<div class = "controls line">
+					<div class = "groups">
+						<span class = "group">
+							<span id = "RecognizeBtn"
+								  class = "button animated">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#fff"
+										  d = "M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+								</svg>
+							</span>
+							<span id = "AbortRecognitionBtn"
+								  class = "button animated">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#fff"
+										  d = "M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,
+									12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+								</svg>
+							</span>
+						</span>
+						<span class = "group">
+							<span id = "ShowFrameBtn"
+								  class = "button animated">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#FFF"
+										  d = "M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,
+										  3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
+								</svg>
+							</span>
+							<span id = "ShowFormBtn"
+								  class = "button animated">
+								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+									<path fill="#FFF" d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
+								</svg>
+							</span>
+							<span class = "button animated ExpandBtn">
+							<svg style = "width:24px;height:24px"
+								 viewBox = "0 0 24 24">
+								<g>
+									<path fill = "#FFF"
+										  d = "m4.16667,10.31818l2,0l0,-4l4,0l0,-2l-6,0l0,6l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m14.16667,4.31818l0,2l4,0l0,4l2,0l0,-6l-6,0l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m18.16667,18.31818l-4,0l0,2l6,0l0,-6l-2,0l0,4l0,0z"></path>
+								</g>
+								<g>
+									<path fill = "#FFF"
+										  d = "m6.16667,14.31818l-2,0l0,6l6,0l0,-2l-4,0l0,-4l0,0z"></path>
+								</g>
+							</svg>
+					</span>
+							<span class = "button animated CollapseBtn">
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#fff"
+										  d = "M14,14H19V16H16V19H14V14M5,14H10V19H8V16H5V14M8,5H10V10H5V8H8V5M19,
+										  8V10H14V5H16V8H19Z" />
+								</svg>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
