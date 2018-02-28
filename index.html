@@ -90,6 +90,10 @@
 			() => console.log("player recognition applied"));
 		test.addEventListener('recognitionAborted',
 			() => console.log("player recognition aborted"));
+		test.addEventListener('recognitionFrameShowed',
+			() => console.log("recognition frame showed"));
+		test.addEventListener('recognitionFormShowed',
+			() => console.log("recognition form showed"));
 		//test.addEventListener('settingsPageChanged',
 		//	() => console.log("player recognition page changed"));
 	}

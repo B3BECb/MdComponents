@@ -324,8 +324,9 @@
 
 		:host(.fullScreen) .ExpandBtn,
 		:host(:not(.fullScreen)) .CollapseBtn,
-		.videoContainer.hidden + .controlsContainer #ShowFormBtn,
-		.videoContainer:not(.hidden) + .controlsContainer #ShowFrameBtn
+		.recognition.layer .videoContainer.hidden + .controlsContainer #ShowFormBtn,
+		.recognition.layer .videoContainer:not(.hidden) + .controlsContainer #ShowFrameBtn,
+		.recognition.layer .videoContainer:not(.hidden) + .controlsContainer .main.line /*TODO: доделать скрытие ссылок, страниц при показе картинки*/
 		{
 			display: none;
 		}
@@ -508,7 +509,8 @@
 		</div>
 		<div class = "recognition layer hidden">
 			<div class = "videoContainer hidden">
-				<img id = "FrameImg" />
+				<img id = "FrameImg"
+					 src = "Frames/frame1.jpg" />
 			</div>
 			<div class = "controlsContainer">
 				<div class = "main line">
@@ -556,8 +558,10 @@
 							</span>
 							<span id = "ShowFormBtn"
 								  class = "button animated">
-								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-									<path fill="#FFF" d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
+								<svg style = "width:24px;height:24px"
+									 viewBox = "0 0 24 24">
+									<path fill = "#FFF"
+										  d = "M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
 								</svg>
 							</span>
 							<span class = "button animated ExpandBtn">

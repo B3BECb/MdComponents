@@ -387,7 +387,7 @@ class Videoplayer
 									detail:
 										{
 											pages:  this.shadowRoot.querySelectorAll(
-												'.playerLayersContainer .settings.layer .pages .page'),
+												`.playerLayersContainer .${layerName}.layer .pages .page`),
 											player: this,
 										},
 								}));
@@ -412,7 +412,7 @@ class Videoplayer
 									detail:
 										{
 											pages:  this.shadowRoot.querySelectorAll(
-												'.playerLayersContainer .settings.layer .pages .page'),
+												`.playerLayersContainer .${layerName}.layer .pages .page`),
 											player: this,
 										},
 								}));
@@ -494,10 +494,10 @@ class Videoplayer
 								{
 									detail:
 										{
-											pages:  this.shadowRoot.querySelectorAll(
+											pages:     this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
 											imageData: null, //TODO:Получить данные изображения
-											player: this,
+											player:    this,
 										},
 								}));
 							this.dispatchEvent(new CustomEvent("recognitionClosed",
@@ -507,6 +507,51 @@ class Videoplayer
 						});
 			};
 
+			let SwitchView = (isShowImage) =>
+			{
+				let videoContainerNode = this.shadowRoot.querySelector(
+					'.playerLayersContainer .recognition.layer .videoContainer');
+
+				if(isShowImage)
+				{
+					videoContainerNode.classList.remove('hidden');
+				}
+				else
+				{
+					videoContainerNode.classList.add('hidden');
+				}
+			};
+
+			let BindShowImageBtn = () =>
+			{
+				this.shadowRoot.querySelector('#ShowFrameBtn')
+					.addEventListener('click',
+						() =>
+						{
+							SwitchView(true);
+							this.dispatchEvent(new CustomEvent("recognitionFrameShowed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			let BindShowFormBtn = () =>
+			{
+				this.shadowRoot.querySelector('#ShowFormBtn')
+					.addEventListener('click',
+						() =>
+						{
+							SwitchView(false);
+							this.dispatchEvent(new CustomEvent("recognitionFormShowed",
+								{
+									detail: this,
+								}));
+						});
+			};
+
+			BindShowImageBtn();
+			BindShowFormBtn();
 			BindOpenRecognition();
 			BindRecognizeBtn();
 			BindAbortBtn();
