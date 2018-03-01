@@ -63,36 +63,39 @@ class Videoplayer
 			);
 		};
 
-		var ConfigureSettings = () =>
+		let settingsBtn = this.shadowRoot.querySelector('#SettingsBtn');
+		let recognitionBtn = this.shadowRoot.querySelector('#ManualRecognitionBtn');
+		let ConfigureLayers = () =>
 		{
-			let ConfigureName = (name) =>
+			let ConfigureLayerName = (name, layerName) =>
 			{
-				let settingsName = this.shadowRoot.querySelector(
-					'.playerLayersContainer .settings.layer .header.line .name');
-				settingsName.textContent = name;
+				let layerNameNode = this.shadowRoot.querySelector(
+					`.playerLayersContainer .${layerName}.layer .header.line .name`);
+				layerNameNode.textContent = name;
 			};
 
-			let ConfigurePages = (pages) =>
+			let ConfigureLayerPages = (pages, layerName) =>
 			{
-				let settingsPages = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .pages');
-				let settingsList = this.shadowRoot.querySelector('.playerLayersContainer .settings.layer .triggers');
+				let pagesNode = this.shadowRoot.querySelector(`.playerLayersContainer .${layerName}.layer .pages`);
+				let linksListNode = this.shadowRoot.querySelector(
+					`.playerLayersContainer .${layerName}.layer .triggers`);
 
 				pages.forEach(
 					(page, index) =>
 					{
 						let id = 'page' + index;
-						let settingsPage = document.createElement('div');
-						settingsPage.classList.add('page');
-						settingsPage.classList.add('hidden');
-						settingsPage.dataset.id = id;
-						settingsPage.appendChild(page.Node);
-						settingsPages.appendChild(settingsPage);
+						let pageNode = document.createElement('div');
+						pageNode.classList.add('page');
+						pageNode.classList.add('hidden');
+						pageNode.dataset.id = id;
+						pageNode.appendChild(page.Node);
+						pagesNode.appendChild(pageNode);
 
 						let link = Videoplayer.Link.import.querySelector('template#link').content.cloneNode(true);
 						link.querySelector('.text').textContent = page.Name;
-						let trigger = link.querySelector('.link.button.trigger');
-						trigger.dataset.id = id;
-						trigger.addEventListener('click',
+						let linkNode = link.querySelector('.link.button.trigger');
+						linkNode.dataset.id = id;
+						linkNode.addEventListener('click',
 							(args) =>
 							{
 								let btn = args.currentTarget;
@@ -102,38 +105,77 @@ class Videoplayer
 								}
 
 								this.shadowRoot.querySelector(
-									'.playerLayersContainer .settings.layer .triggers .trigger.markared')
+									`.playerLayersContainer .${layerName}.layer .triggers .trigger.markared`)
 									.classList.remove('markared');
 								this.shadowRoot.querySelector(
-									'.playerLayersContainer .settings.layer .pages .page:not(.hidden)')
+									`.playerLayersContainer .${layerName}.layer .pages .page:not(.hidden)`)
 									.classList.add('hidden');
 
 								btn.classList.add('markared');
 								let page = this.shadowRoot.querySelector(
-									`.playerLayersContainer .settings.layer .pages .page[data-id='${btn.dataset.id}']`);
+									`.playerLayersContainer .${layerName}.layer .pages .page[data-id='${btn.dataset.id}']`);
 								page.classList.remove('hidden');
 
-								this.dispatchEvent(new CustomEvent("settingsPageChanged",
+								this.dispatchEvent(new CustomEvent(`${layerName}PageChanged`,
 									{
 										detail:
 											{
 												button: btn,
 												page:   page,
 												pages:  this.shadowRoot.querySelectorAll(
-													'.playerLayersContainer .settings.layer .pages .page'),
+													`.playerLayersContainer .${layerName}.layer .pages .page`),
 												player: this,
 											},
 									}));
 							},
 						);
-						settingsList.appendChild(link);
+						linksListNode.appendChild(link);
 
 					},
 				);
 			};
 
-			ConfigureName(configuration.Layers.SettingsLayer.Name);
-			ConfigurePages(configuration.Layers.SettingsLayer.Pages);
+			let ConfigureSettings = () =>
+			{
+				const layerName = 'settings';
+
+				ConfigureLayerName(configuration.Layers.SettingsLayer.Name, layerName);
+				ConfigureLayerPages(configuration.Layers.SettingsLayer.Pages, layerName);
+			};
+
+			let ConfigureRecognition = () =>
+			{
+				const layerName = 'recognition';
+
+				ConfigureLayerName(configuration.Layers.RecognitionLayer.Name, layerName);
+				ConfigureLayerPages(configuration.Layers.RecognitionLayer.Pages, layerName);
+			};
+
+			try
+			{
+				ConfigureSettings();
+			}
+			catch(exc)
+			{
+				if(!configuration.Layers.SettingsLayer)
+				{
+					settingsBtn.classList.add('hidden');
+				}
+				console.error("no settings configuration");
+			}
+
+			try
+			{
+				ConfigureRecognition();
+			}
+			catch(exc)
+			{
+				if(!configuration.Layers.RecognitionLayer)
+				{
+					recognitionBtn.classList.add('hidden');
+				}
+				console.error("no recognition configuration");
+			}
 		};
 
 		var ConfigurePlayerName = () =>
@@ -180,7 +222,16 @@ class Videoplayer
 		ConfigurePlayerName();
 		ConfigurePlayerSource();
 		ConfigureTriggers();
-		ConfigureSettings();
+
+		if(!configuration.Layers)
+		{
+			settingsBtn.classList.add('hidden');
+			recognitionBtn.classList.add('hidden');
+		}
+		else
+		{
+			ConfigureLayers();
+		}
 
 		this._configuration = configuration;
 	}
