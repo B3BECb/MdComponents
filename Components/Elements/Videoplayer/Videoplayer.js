@@ -289,7 +289,7 @@ class Videoplayer
 
 	_BindCommands()
 	{
-		var BindPlayerCommands = () =>
+		let BindPlayerCommands = () =>
 		{
 			var startBtn = this.shadowRoot.querySelector('#StartBtn');
 			startBtn.addEventListener('click',
@@ -311,7 +311,7 @@ class Videoplayer
 			);
 		};
 
-		var BindExpandCommand = () =>
+		let BindExpandCommand = () =>
 		{
 			let btns = this.shadowRoot.querySelectorAll('.ExpandBtn');
 
@@ -332,7 +332,7 @@ class Videoplayer
 				});
 		};
 
-		var BindCollapseCommand = () =>
+		let BindCollapseCommand = () =>
 		{
 			let btns = this.shadowRoot.querySelectorAll('.CollapseBtn');
 
@@ -353,7 +353,7 @@ class Videoplayer
 				});
 		};
 
-		var OpenLayer = (layerName) =>
+		let OpenLayer = (layerName) =>
 		{
 			this.shadowRoot.querySelector('.video.layer').classList.add('hidden');
 			this.shadowRoot.querySelector(`.${layerName}.layer`).classList.remove('hidden');
@@ -393,15 +393,67 @@ class Videoplayer
 			}
 		};
 
-		var CloseLayer = (layerName) =>
+		let CloseLayer = (layerName) =>
 		{
 			this.shadowRoot.querySelector('.video.layer').classList.remove('hidden');
 			this.shadowRoot.querySelector(`.${layerName}.layer`).classList.add('hidden');
 		};
 
-		var BindSettingsCommands = () =>
+		let LoadingProcessController =
+				{
+					Start: (layerName) =>
+						   {
+							   let process = this.shadowRoot.querySelector(
+								   `.playerLayersContainer .${layerName}.layer .loadingProgress`);
+							   process.classList.remove('error');
+							   process.classList.add('loading');
+						   },
+
+					Stop: (layerName) =>
+						  {
+							  let process = this.shadowRoot.querySelector(
+								  `.playerLayersContainer .${layerName}.layer .loadingProgress`);
+							  process.classList.remove('error');
+							  process.classList.remove('loading');
+
+						  },
+
+					Error: (layerName) =>
+						   {
+							   let process = this.shadowRoot.querySelector(
+								   `.playerLayersContainer .${layerName}.layer .loadingProgress`);
+							   process.classList.add('error');
+
+						   },
+				};
+
+		let BindSettingsCommands = () =>
 		{
 			const layerName = 'settings';
+
+			let CloseLayerCallback = () =>
+			{
+				CloseLayer(layerName);
+				this.dispatchEvent(new CustomEvent("settingsClosed",
+					{
+						detail: this,
+					}));
+
+				this.Start();
+			};
+
+			let CreateOnCloseEventArgs = (layerName) =>
+			{
+				let event = new LayerResultEventArgs(
+					this
+					.shadowRoot
+					.querySelectorAll(`.playerLayersContainer .${layerName}.layer .pages .page`),
+					this,
+					CloseLayerCallback,
+					LoadingProcessController,
+					layerName);
+				return event;
+			};
 
 			let BindOpenSettings = () =>
 			{
@@ -430,25 +482,8 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.dispatchEvent(new CustomEvent("settingsAborted",
-								{
-									detail:
-										{
-											pages:      this.shadowRoot.querySelectorAll(
-												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player:     this,
-											closeLayer: () =>
-														{
-															CloseLayer(layerName);
-															this.dispatchEvent(new CustomEvent("settingsClosed",
-																{
-																	detail: this,
-																}));
-
-															this.Start();
-														},
-										},
-								}));
+							this.dispatchEvent(
+								new CustomEvent("settingsAborted", {detail: CreateOnCloseEventArgs(layerName)}));
 						});
 			};
 
@@ -458,25 +493,8 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.dispatchEvent(new CustomEvent("settingsApplied",
-								{
-									detail:
-										{
-											pages:      this.shadowRoot.querySelectorAll(
-												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player:     this,
-											closeLayer: () =>
-														{
-															CloseLayer(layerName);
-															this.dispatchEvent(new CustomEvent("settingsClosed",
-																{
-																	detail: this,
-																}));
-
-															this.Start();
-														},
-										},
-								}));
+							this.dispatchEvent(
+								new CustomEvent("settingsApplied", {detail: CreateOnCloseEventArgs(layerName)}));
 						});
 			};
 
@@ -485,9 +503,22 @@ class Videoplayer
 			BindAbortBtn();
 		};
 
-		var BindRecognitionCommands = () =>
+		let BindRecognitionCommands = () =>
 		{
 			const layerName = 'recognition';
+
+			let CloseLayerCallback = () =>
+			{
+				this.shadowRoot.querySelector("#FrameImg").src = '';
+				SwitchView(false);
+				CloseLayer(layerName);
+				this.dispatchEvent(new CustomEvent("recognitionClosed",
+					{
+						detail: this,
+					}));
+
+				this.Start();
+			};
 
 			let BindOpenRecognition = () =>
 			{
@@ -558,27 +589,16 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.dispatchEvent(new CustomEvent("recognitionAborted",
-								{
-									detail:
-										{
-											pages:      this.shadowRoot.querySelectorAll(
-												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player:     this,
-											closeLayer: () =>
-														{
-															this.shadowRoot.querySelector("#FrameImg").src = '';
-															SwitchView(false);
-															CloseLayer(layerName);
-															this.dispatchEvent(new CustomEvent("recognitionClosed",
-																{
-																	detail: this,
-																}));
+							let event = new LayerResultEventArgs(
+								this
+								.shadowRoot
+								.querySelectorAll(`.playerLayersContainer .${layerName}.layer .pages .page`),
+								this,
+								CloseLayerCallback,
+								LoadingProcessController,
+								layerName);
 
-															this.Start();
-														},
-										},
-								}));
+							this.dispatchEvent(new CustomEvent("recognitionAborted", {detail: event}));
 						});
 			};
 
@@ -588,28 +608,17 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.dispatchEvent(new CustomEvent("recognitionApplied",
-								{
-									detail:
-										{
-											pages:      this.shadowRoot.querySelectorAll(
-												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											imageData:  this.shadowRoot.querySelector("#FrameImg").src,
-											player:     this,
-											closeLayer: () =>
-														{
-															this.shadowRoot.querySelector("#FrameImg").src = '';
-															SwitchView(false);
-															CloseLayer(layerName);
-															this.dispatchEvent(new CustomEvent("recognitionClosed",
-																{
-																	detail: this,
-																}));
+							let event = new OnRecognizeEventArgs(
+								this
+								.shadowRoot
+								.querySelectorAll(`.playerLayersContainer .${layerName}.layer .pages .page`),
+								this,
+								CloseLayerCallback,
+								LoadingProcessController,
+								layerName,
+								this.shadowRoot.querySelector("#FrameImg").src);
 
-															this.Start();
-														},
-										},
-								}));
+							this.dispatchEvent(new CustomEvent("recognitionApplied", {detail: event}));
 						});
 			};
 
@@ -780,5 +789,28 @@ class LayerPage
 	{
 		this.Name = name;
 		this.Node = node;
+	}
+}
+
+class LayerResultEventArgs
+{
+	constructor(pages, player, closeLayerCallback, processController, layerName)
+	{
+		this.Pages = pages;
+		this.Player = player;
+		this.CloseLayer = closeLayerCallback;
+		this.ShowProcess = () => processController.Start(layerName);
+		this.HideProcess = () => processController.Stop(layerName);
+		this.ProcessError = () => processController.Error(layerName);
+	}
+}
+
+class OnRecognizeEventArgs
+	extends LayerResultEventArgs
+{
+	constructor(pages, player, closeLayerCallback, processController, layerName, imageData)
+	{
+		super(pages, player, closeLayerCallback, processController, layerName);
+		this.ImageData = imageData;
 	}
 }

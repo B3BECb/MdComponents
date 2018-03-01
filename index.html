@@ -33,7 +33,7 @@
 	.AfterAll(() => Initialize());
 
 	var t = [
-		['1', '2', '3'], ['id1', 'id2', 'id3'],
+		['Trigger 1', 'Trigger 2', 'Trigger 3'], ['id1', 'id2', 'id3'],
 	];
 
 	function Initialize()
@@ -77,13 +77,13 @@
 			(args) =>
 			{
 				console.log("player settings applied");
-				args.detail.closeLayer();
+				args.detail.CloseLayer();
 			});
 		test.addEventListener('settingsAborted',
 			(args) =>
 			{
 				console.log("player settings aborted");
-				args.detail.closeLayer();
+				args.detail.CloseLayer();
 			});
 		test.addEventListener('settingsPageChanged',
 			() => console.log("player settings page changed"));
