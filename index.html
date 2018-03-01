@@ -109,8 +109,8 @@
 			() => console.log("recognition frame showed"));
 		test.addEventListener('recognitionFormShowed',
 			() => console.log("recognition form showed"));
-		//test.addEventListener('settingsPageChanged',
-		//	() => console.log("player recognition page changed"));
+		test.addEventListener('recognitionPageChanged',
+			() => console.log("player recognition page changed"));
 	}
 
 	function CreateTriggers()
@@ -138,7 +138,25 @@
 		pages.push(new LayerPage('test page 2', templetePege));
 
 		var settingsLayer = new VideoplayerLayer('Settings | Test player', pages);
-		var layers = new VideoplayerLayers(settingsLayer);
+
+		var recogPages = [];
+
+		templetePege = document.querySelector('#recogTp').content.cloneNode(true);
+		templetePege.querySelector('#recogPlate').addEventListener('valueChanged', (args) => console.info(args.detail));
+		templetePege.querySelector('#langRusChkbx').addEventListener('change', (args) => console.info('lang Rus ' + args.target.checked));
+		templetePege.querySelector('#langEuChkbx').addEventListener('change', (args) => console.info('lang Eu ' + args.target.checked));
+		templetePege.querySelector('#langBoChkbx').addEventListener('change', (args) => console.info('lang Bo ' + args.target.checked));
+		templetePege.querySelector('#langFrChkbx').addEventListener('change', (args) => console.info('lang Fr ' + args.target.checked));
+		recogPages.push(new LayerPage('Plate', templetePege));
+
+		templetePege = document.querySelector('#recogTp2').content.cloneNode(true);
+		templetePege.querySelector('#UseDateTimeChkbx').addEventListener('change', (args) => console.info('Use datetime ' + args.target.checked));
+		templetePege.querySelector('#DateTimeInput').addEventListener('change', (args) => console.info('date time is ' + args.target.checked));
+		recogPages.push(new LayerPage('Date and time', templetePege));
+
+		var rocogLayer = new VideoplayerLayer('Recognition | Test player', recogPages);
+
+		var layers = new VideoplayerLayers(settingsLayer, rocogLayer);
 		return layers;
 	}
 </script>
@@ -157,6 +175,33 @@
 						 noCollapse
 						 type = "text"
 						 style = "display: block; width: 200px;"></validable-input>
+	</div>
+</template>
+<template id = "recogTp">
+	<div style = "width: 200px;">
+		<validable-input id = "recogPlate"
+						 title = "plate"
+						 noCollapse
+						 type = "text"
+						 style = "display: block; width: 200px;"></validable-input>
+		<div>
+			RUS <input id="langRusChkbx" type="checkbox">
+		</div>
+		<div>
+			EU <input id="langEuChkbx" type="checkbox">
+		</div>
+		<div>
+			BO <input id="langBoChkbx" type="checkbox">
+		</div>
+		<div>
+			FR <input id="langFrChkbx" type="checkbox">
+		</div>
+	</div>
+</template>
+<template id = "recogTp2">
+	<div style = "width: 200px;">
+		Use custom Date and time <input id="UseDateTimeChkbx" type="checkbox">
+		<input id="DateTimeInput" type="datetime-local">
 	</div>
 </template>
 </html>

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="16fed8ae-b510-4c7f-88ae-28cf3acfdb09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" afterPath="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" afterPath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,24 +17,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="80" column="15" lean-forward="true" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
+            <state relative-caret-position="243">
+              <caret line="139" column="43" lean-forward="false" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1222#3242#0" expanded="false" />
+                <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Videoplayer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Videoplayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="602" column="14" lean-forward="true" selection-start-line="602" selection-start-column="14" selection-end-line="602" selection-end-column="14" />
+            <state relative-caret-position="300">
+              <caret line="585" column="36" lean-forward="false" selection-start-line="585" selection-start-column="36" selection-end-line="585" selection-end-column="36" />
               <folding>
                 <element signature="e#102#239#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
@@ -87,7 +88,9 @@
                 <element signature="e#9878#9933#0" expanded="false" />
                 <element signature="e#9976#10139#0" expanded="false" />
                 <element signature="e#10179#10946#0" expanded="false" />
+                <element signature="e#10986#12521#0" expanded="false" />
                 <element signature="e#11059#11205#0" expanded="false" />
+                <element signature="e#11258#11518#0" expanded="false" />
                 <element signature="e#11556#11906#0" expanded="false" />
                 <element signature="e#11685#11893#0" expanded="false" />
                 <element signature="e#11725#11754#0" expanded="false" />
@@ -229,8 +232,8 @@
         <option value="$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInputTemplate.html" />
         <option value="$PROJECT_DIR$/Components/Elements/MaterialSwitch/MaterialSwitch.js" />
         <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -344,7 +347,7 @@
       <workItem from="1519196324826" duration="23154000" />
       <workItem from="1519281389451" duration="8646000" />
       <workItem from="1519798834151" duration="21570000" />
-      <workItem from="1519885474243" duration="13437000" />
+      <workItem from="1519885474243" duration="15136000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1519196570892</created>
@@ -507,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519897643913</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added loadingController">
+      <created>1519902957900</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1519902957900</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66807000" />
+    <option name="totallyTimeSpent" value="68506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -600,7 +610,8 @@
     <MESSAGE value="changed events order" />
     <MESSAGE value="added button wait animation" />
     <MESSAGE value="added recognition button protection against empty layer settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="added recognition button protection against empty layer settings" />
+    <MESSAGE value="added loadingController" />
+    <option name="LAST_COMMIT_MESSAGE" value="added loadingController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -615,7 +626,10 @@
           <caret line="95" column="47" lean-forward="false" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1222#3242#0" expanded="false" />
+            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -675,7 +689,9 @@
             <element signature="e#9878#9933#0" expanded="false" />
             <element signature="e#9976#10139#0" expanded="false" />
             <element signature="e#10179#10946#0" expanded="false" />
+            <element signature="e#10986#12521#0" expanded="false" />
             <element signature="e#11059#11205#0" expanded="false" />
+            <element signature="e#11258#11518#0" expanded="false" />
             <element signature="e#11556#11906#0" expanded="false" />
             <element signature="e#11685#11893#0" expanded="false" />
             <element signature="e#11725#11754#0" expanded="false" />
@@ -794,7 +810,10 @@
           <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1222#3242#0" expanded="false" />
+            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -853,7 +872,9 @@
             <element signature="e#9878#9933#0" expanded="false" />
             <element signature="e#9976#10139#0" expanded="false" />
             <element signature="e#10179#10946#0" expanded="false" />
+            <element signature="e#10986#12521#0" expanded="false" />
             <element signature="e#11059#11205#0" expanded="false" />
+            <element signature="e#11258#11518#0" expanded="false" />
             <element signature="e#11556#11906#0" expanded="false" />
             <element signature="e#11685#11893#0" expanded="false" />
             <element signature="e#11725#11754#0" expanded="false" />
@@ -988,7 +1009,10 @@
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1222#3242#0" expanded="false" />
+            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1047,7 +1071,9 @@
             <element signature="e#9878#9933#0" expanded="false" />
             <element signature="e#9976#10139#0" expanded="false" />
             <element signature="e#10179#10946#0" expanded="false" />
+            <element signature="e#10986#12521#0" expanded="false" />
             <element signature="e#11059#11205#0" expanded="false" />
+            <element signature="e#11258#11518#0" expanded="false" />
             <element signature="e#11556#11906#0" expanded="false" />
             <element signature="e#11685#11893#0" expanded="false" />
             <element signature="e#11725#11754#0" expanded="false" />
@@ -1213,17 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="80" column="15" lean-forward="true" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1293,8 +1308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="602" column="14" lean-forward="true" selection-start-line="602" selection-start-column="14" selection-end-line="602" selection-end-column="14" />
+        <state relative-caret-position="300">
+          <caret line="585" column="36" lean-forward="false" selection-start-line="585" selection-start-column="36" selection-end-line="585" selection-end-column="36" />
           <folding>
             <element signature="e#102#239#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
@@ -1345,7 +1360,9 @@
             <element signature="e#9878#9933#0" expanded="false" />
             <element signature="e#9976#10139#0" expanded="false" />
             <element signature="e#10179#10946#0" expanded="false" />
+            <element signature="e#10986#12521#0" expanded="false" />
             <element signature="e#11059#11205#0" expanded="false" />
+            <element signature="e#11258#11518#0" expanded="false" />
             <element signature="e#11556#11906#0" expanded="false" />
             <element signature="e#11685#11893#0" expanded="false" />
             <element signature="e#11725#11754#0" expanded="false" />
@@ -1387,6 +1404,20 @@
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="139" column="43" lean-forward="false" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1222#3242#0" expanded="false" />
+            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
