@@ -97,13 +97,13 @@
 			(args) =>
 			{
 				console.log("player recognition applied");
-				args.detail.closeLayer();
+				args.detail.CloseLayer();
 			});
 		test.addEventListener('recognitionAborted',
 			(args) =>
 			{
 				console.log("player recognition aborted");
-				args.detail.closeLayer();
+				args.detail.CloseLayer();
 			});
 		test.addEventListener('recognitionFrameShowed',
 			() => console.log("recognition frame showed"));
