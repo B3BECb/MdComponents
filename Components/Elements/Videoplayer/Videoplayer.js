@@ -432,25 +432,59 @@ class Videoplayer
 		{
 			const layerName = 'recognition';
 
+			//FIXME: добавить визуализацию процесса переключения к распознаванию
+			//Можно сделать мигание кнопки. При ошибке, кнопка подсвечивается красным на несколько секунд
 			let BindOpenRecognition = () =>
 			{
 				var recognitionBtn = this.shadowRoot.querySelector('#ManualRecognitionBtn');
+				var loadingProgress = this.shadowRoot.querySelector('.video.layer .controls.line .loadingProgress');
+
 				recognitionBtn.addEventListener('click',
-					() =>
+					async() =>
 					{
 						if(this._isPlayerStarted)
 						{
-							//TODO: Сунуть в изображение данные другого изображения
+							if((loadingProgress.classList.contains('error') && loadingProgress.classList.contains(
+									'loading')) || loadingProgress.classList.contains('loading'))
+							{
+								throw "First image not loaded yet";
+							}
+
+							let image = this.shadowRoot.querySelector('.video.layer .sourceNode');
+
+							let url = image.src.split('&temp=')[0];
+							let base64 = null;
+
+							try
+							{
+								base64 = await Videoplayer.ConvertUrlToBase64(`${url}&temp=${Date.now()}`);
+							}
+							catch(exc)
+							{
+								throw "Unable to display recognition frame. Reason: " + exc;
+							}
+
+							if(!base64)
+							{
+								throw "Unable to display recognition frame. Reason: " + exc;
+							}
+
+							let img = this.shadowRoot.querySelector('#FrameImg');
+							img.src = base64;
 
 							this.Stop();
+
+							OpenLayer(layerName);
+
+							this.dispatchEvent(new CustomEvent("recognitionOpened",
+								{
+									detail: this,
+								}));
 						}
-
-						OpenLayer(layerName);
-
-						this.dispatchEvent(new CustomEvent("recognitionOpened",
-							{
-								detail: this,
-							}));
+						else
+						{
+							throw "player is stopped";
+						}
 					});
 			};
 
@@ -461,6 +495,7 @@ class Videoplayer
 						() =>
 						{
 							this.shadowRoot.querySelector("#FrameImg").src = '';
+							SwitchView(false);
 							CloseLayer(layerName);
 
 							this.Start();
@@ -486,7 +521,7 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.shadowRoot.querySelector("#FrameImg").src = '';
+							SwitchView(false);
 							CloseLayer(layerName);
 
 							this.Start();
@@ -496,10 +531,11 @@ class Videoplayer
 										{
 											pages:     this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											imageData: null, //TODO:Получить данные изображения
+											imageData: this.shadowRoot.querySelector("#FrameImg").src,
 											player:    this,
 										},
 								}));
+							this.shadowRoot.querySelector("#FrameImg").src = '';
 							this.dispatchEvent(new CustomEvent("recognitionClosed",
 								{
 									detail: this,
@@ -576,6 +612,34 @@ class Videoplayer
 			Image: 0,
 			Video: 1.,
 		};
+	}
+
+	static ConvertUrlToBase64(url)
+	{
+		let img = new Image();
+		img.crossOrigin = 'Anonymous';
+		return new Promise((resolve, reject) =>
+		{
+			img.addEventListener('load',
+				(args) =>
+				{
+					let canvas = document.createElement('CANVAS');
+					let ctx = canvas.getContext('2d');
+					canvas.height = args.target.height;
+					canvas.width = args.target.width;
+					ctx.drawImage(args.target, 0, 0);
+					let dataURL = canvas.toDataURL();
+					canvas = null;
+
+					resolve(dataURL);
+				});
+			img.addEventListener('error',
+				(args) =>
+				{
+					reject(new DOMException("Problem occurrence while loading image."));
+				});
+			img.src = url;
+		});
 	}
 }
 
