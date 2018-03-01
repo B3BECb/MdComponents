@@ -330,6 +330,48 @@
 			display: none;
 		}
 
+		.groups .button.waitable.wait
+		{
+			animation: indeterminateWait 1.8s linear infinite;
+		}
+
+		.groups .button.waitable.error
+		{
+			animation: errorState 1.8s linear 3;
+		}
+
+		@keyframes indeterminateWait
+		{
+			0%
+			{
+				background-color: #1B1B1B;
+			}
+			50%
+			{
+				background-color: #2196F3;
+			}
+			100%
+			{
+				background-color: #1B1B1B;
+			}
+		}
+
+		@keyframes errorState
+		{
+			0%
+			{
+				background-color: #1B1B1B;
+			}
+			50%
+			{
+				background-color: rgba(244, 67, 54, 0.7);
+			}
+			100%
+			{
+				background-color: #1B1B1B;
+			}
+		}
+
 	</style>
 	<div class = "playerLayersContainer">
 		<div class = "video layer ">
@@ -368,7 +410,7 @@
 							</svg>
 						</span>
 						<span id = "ManualRecognitionBtn"
-							  class = "button animated">
+							  class = "button animated waitable">
 							<svg style = "width:24px;height:24px"
 								 viewBox = "0 0 24 24">
 								<path fill = "#FFF"

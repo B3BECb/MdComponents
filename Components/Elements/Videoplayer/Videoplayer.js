@@ -438,8 +438,6 @@ class Videoplayer
 		{
 			const layerName = 'recognition';
 
-			//FIXME: добавить визуализацию процесса переключения к распознаванию
-			//Можно сделать мигание кнопки. При ошибке, кнопка подсвечивается красным на несколько секунд
 			let BindOpenRecognition = () =>
 			{
 				var recognitionBtn = this.shadowRoot.querySelector('#ManualRecognitionBtn');
@@ -448,11 +446,16 @@ class Videoplayer
 				recognitionBtn.addEventListener('click',
 					async() =>
 					{
+						recognitionBtn.classList.remove('wait');
+						recognitionBtn.classList.remove('error');
+
 						if(this._isPlayerStarted)
 						{
+							recognitionBtn.classList.add('wait');
 							if((loadingProgress.classList.contains('error') && loadingProgress.classList.contains(
 									'loading')) || loadingProgress.classList.contains('loading'))
 							{
+								recognitionBtn.classList.add('error');
 								throw "First image not loaded yet";
 							}
 
@@ -467,11 +470,13 @@ class Videoplayer
 							}
 							catch(exc)
 							{
+								recognitionBtn.classList.add('error');
 								throw "Unable to display recognition frame. Reason: " + exc;
 							}
 
 							if(!base64)
 							{
+								recognitionBtn.classList.add('error');
 								throw "Unable to display recognition frame. Reason: " + exc;
 							}
 
@@ -481,6 +486,7 @@ class Videoplayer
 							this.Stop();
 
 							OpenLayer(layerName);
+							recognitionBtn.classList.remove('wait');
 
 							this.dispatchEvent(new CustomEvent("recognitionOpened",
 								{
@@ -489,6 +495,7 @@ class Videoplayer
 						}
 						else
 						{
+							recognitionBtn.classList.add('error');
 							throw "player is stopped";
 						}
 					});
