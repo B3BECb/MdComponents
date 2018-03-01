@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16fed8ae-b510-4c7f-88ae-28cf3acfdb09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" afterPath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" afterPath="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
-              <caret line="95" column="47" lean-forward="false" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
+            <state relative-caret-position="498">
+              <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
@@ -30,40 +31,118 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Videoplayer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Videoplayer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4216">
-              <caret line="589" column="30" lean-forward="false" selection-start-line="589" selection-start-column="30" selection-end-line="589" selection-end-column="30" />
-              <caret line="588" column="31" lean-forward="false" selection-start-line="588" selection-start-column="31" selection-end-line="588" selection-end-column="31" />
+            <state relative-caret-position="538">
+              <caret line="608" column="30" lean-forward="true" selection-start-line="608" selection-start-column="30" selection-end-line="608" selection-end-column="30" />
               <folding>
+                <element signature="e#102#239#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+                <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+                <element signature="n#!!block;n#Configure#0;n#Videoplayer#0" expanded="false" />
+                <element signature="e#684#727#0" expanded="false" />
                 <element signature="e#763#1446#0" expanded="false" />
+                <element signature="e#920#1435#0" expanded="false" />
+                <element signature="e#1267#1387#0" expanded="false" />
+                <element signature="e#1339#1376#0" expanded="false" />
                 <element signature="e#1483#3801#0" expanded="false" />
+                <element signature="e#1521#1685#0" expanded="false" />
                 <element signature="e#1726#3675#0" expanded="false" />
+                <element signature="e#1985#3662#0" expanded="false" />
+                <element signature="e#2602#3606#0" expanded="false" />
+                <element signature="e#2697#2725#0" expanded="false" />
+                <element signature="e#3337#3594#0" expanded="false" />
+                <element signature="e#3368#3582#0" expanded="false" />
                 <element signature="e#3840#4015#0" expanded="false" />
                 <element signature="e#4056#5031#0" expanded="false" />
+                <element signature="e#4061#5027#0" expanded="false" />
+                <element signature="e#4103#5022#0" expanded="false" />
+                <element signature="e#4558#4686#0" expanded="false" />
+                <element signature="e#4647#4678#0" expanded="false" />
+                <element signature="e#4773#4961#0" expanded="false" />
+                <element signature="e#4839#4953#0" expanded="false" />
                 <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+                <element signature="e#5526#5786#0" expanded="false" />
+                <element signature="e#5572#5782#0" expanded="false" />
+                <element signature="e#5895#5919#0" expanded="false" />
                 <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+                <element signature="e#6083#6298#0" expanded="false" />
+                <element signature="e#6129#6294#0" expanded="false" />
+                <element signature="e#6407#6431#0" expanded="false" />
                 <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
                 <element signature="e#6556#7058#0" expanded="false" />
+                <element signature="e#6672#6698#0" expanded="false" />
+                <element signature="e#6818#7047#0" expanded="false" />
                 <element signature="e#7095#7427#0" expanded="false" />
+                <element signature="e#7194#7421#0" expanded="false" />
+                <element signature="e#7249#7406#0" expanded="false" />
+                <element signature="e#7361#7395#0" expanded="false" />
                 <element signature="e#7466#7804#0" expanded="false" />
+                <element signature="e#7567#7798#0" expanded="false" />
+                <element signature="e#7622#7783#0" expanded="false" />
+                <element signature="e#7738#7772#0" expanded="false" />
                 <element signature="e#7842#8817#0" expanded="false" />
+                <element signature="e#8150#8194#0" expanded="false" />
+                <element signature="e#8347#8396#0" expanded="false" />
+                <element signature="e#8547#8603#0" expanded="false" />
+                <element signature="e#8758#8813#0" expanded="false" />
                 <element signature="e#8856#9019#0" expanded="false" />
-                <element signature="e#9059#10729#0" expanded="false" />
+                <element signature="e#9059#10965#0" expanded="false" />
                 <element signature="e#9130#9480#0" expanded="false" />
-                <element signature="e#9514#10071#0" expanded="false" />
-                <element signature="e#10105#10662#0" expanded="false" />
-                <marker date="1519885476461" expanded="true" signature="282:15818" ph="{...}" />
-                <marker date="1519885476461" expanded="true" signature="6519:10814" ph="{...}" />
-                <marker date="1519885476461" expanded="true" signature="10772:10814" ph="{...}" />
-                <marker date="1519885476461" expanded="false" signature="15812:15816" ph="{...}" />
+                <element signature="e#9259#9467#0" expanded="false" />
+                <element signature="e#9299#9328#0" expanded="false" />
+                <element signature="e#9425#9457#0" expanded="false" />
+                <element signature="e#9514#10189#0" expanded="false" />
+                <element signature="e#10223#10898#0" expanded="false" />
+                <element signature="e#11008#15335#0" expanded="false" />
+                <element signature="e#11050#11118#0" expanded="false" />
+                <element signature="e#11254#12587#0" expanded="false" />
+                <element signature="e#11509#12580#0" expanded="false" />
+                <element signature="e#11549#12512#0" expanded="false" />
+                <element signature="e#11723#11777#0" expanded="false" />
+                <element signature="e#11950#12044#0" expanded="false" />
+                <element signature="e#12070#12149#0" expanded="false" />
+                <element signature="e#12177#12256#0" expanded="false" />
+                <element signature="e#12467#12501#0" expanded="false" />
+                <element signature="e#12530#12573#0" expanded="false" />
+                <element signature="e#12621#13407#0" expanded="false" />
+                <element signature="e#13445#14295#0" expanded="false" />
+                <element signature="e#14338#14626#0" expanded="false" />
+                <element signature="e#14492#14551#0" expanded="false" />
+                <element signature="e#14565#14621#0" expanded="false" />
+                <element signature="e#14664#14922#0" expanded="false" />
+                <element signature="e#14767#14915#0" expanded="false" />
+                <element signature="e#14870#14904#0" expanded="false" />
+                <element signature="e#14959#15216#0" expanded="false" />
+                <element signature="e#15061#15209#0" expanded="false" />
+                <element signature="e#15164#15198#0" expanded="false" />
+                <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
+                <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+                <element signature="e#15623#15655#0" expanded="false" />
+                <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+                <element signature="e#15798#16310#0" expanded="false" />
+                <element signature="e#15850#16151#0" expanded="false" />
+                <element signature="e#16205#16286#0" expanded="false" />
+                <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+                <element signature="n#VideoplayerConfiguration#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
+                <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+                <element signature="n#VideoplayerTrigger#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+                <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+                <element signature="n#VideoplayerLayers#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#VideoplayerLayers#0" expanded="false" />
+                <element signature="n#VideoplayerLayer#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+                <element signature="n#LayerPage#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoplayerTemplate.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VideoplayerTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -145,9 +224,9 @@
         <option value="$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInput.js" />
         <option value="$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInputTemplate.html" />
         <option value="$PROJECT_DIR$/Components/Elements/MaterialSwitch/MaterialSwitch.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
         <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
+        <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -261,7 +340,7 @@
       <workItem from="1519196324826" duration="23154000" />
       <workItem from="1519281389451" duration="8646000" />
       <workItem from="1519798834151" duration="21570000" />
-      <workItem from="1519885474243" duration="1052000" />
+      <workItem from="1519885474243" duration="2048000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1519196570892</created>
@@ -396,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519885824315</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="обновлены кнопки триггеров">
+      <created>1519886559899</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1519886559899</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54422000" />
+    <option name="totallyTimeSpent" value="55418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -485,7 +571,8 @@
     <MESSAGE value="recognition oppened and closed" />
     <MESSAGE value="recognition show frame" />
     <MESSAGE value="обновлён видеоплеер" />
-    <option name="LAST_COMMIT_MESSAGE" value="обновлён видеоплеер" />
+    <MESSAGE value="обновлены кнопки триггеров" />
+    <option name="LAST_COMMIT_MESSAGE" value="обновлены кнопки триггеров" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,27 +598,106 @@
           <caret line="553" column="30" lean-forward="false" selection-start-line="553" selection-start-column="30" selection-end-line="553" selection-end-column="30" />
           <caret line="552" column="31" lean-forward="false" selection-start-line="552" selection-start-column="31" selection-end-line="552" selection-end-column="31" />
           <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Configure#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
             <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
             <element signature="e#1483#3801#0" expanded="false" />
+            <element signature="e#1521#1685#0" expanded="false" />
             <element signature="e#1726#3675#0" expanded="false" />
+            <element signature="e#1985#3662#0" expanded="false" />
+            <element signature="e#2602#3606#0" expanded="false" />
+            <element signature="e#2697#2725#0" expanded="false" />
+            <element signature="e#3337#3594#0" expanded="false" />
+            <element signature="e#3368#3582#0" expanded="false" />
             <element signature="e#3840#4015#0" expanded="false" />
             <element signature="e#4056#5031#0" expanded="false" />
+            <element signature="e#4061#5027#0" expanded="false" />
+            <element signature="e#4103#5022#0" expanded="false" />
+            <element signature="e#4558#4686#0" expanded="false" />
+            <element signature="e#4647#4678#0" expanded="false" />
+            <element signature="e#4773#4961#0" expanded="false" />
+            <element signature="e#4839#4953#0" expanded="false" />
             <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#5526#5786#0" expanded="false" />
+            <element signature="e#5572#5782#0" expanded="false" />
+            <element signature="e#5895#5919#0" expanded="false" />
             <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6083#6298#0" expanded="false" />
+            <element signature="e#6129#6294#0" expanded="false" />
+            <element signature="e#6407#6431#0" expanded="false" />
             <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#6556#7058#0" expanded="false" />
+            <element signature="e#6672#6698#0" expanded="false" />
+            <element signature="e#6818#7047#0" expanded="false" />
             <element signature="e#7095#7427#0" expanded="false" />
+            <element signature="e#7194#7421#0" expanded="false" />
+            <element signature="e#7249#7406#0" expanded="false" />
+            <element signature="e#7361#7395#0" expanded="false" />
             <element signature="e#7466#7804#0" expanded="false" />
+            <element signature="e#7567#7798#0" expanded="false" />
+            <element signature="e#7622#7783#0" expanded="false" />
+            <element signature="e#7738#7772#0" expanded="false" />
             <element signature="e#7842#8817#0" expanded="false" />
+            <element signature="e#8150#8194#0" expanded="false" />
+            <element signature="e#8347#8396#0" expanded="false" />
+            <element signature="e#8547#8603#0" expanded="false" />
+            <element signature="e#8758#8813#0" expanded="false" />
             <element signature="e#8856#9019#0" expanded="false" />
-            <element signature="e#9059#10729#0" expanded="false" />
+            <element signature="e#9059#10965#0" expanded="false" />
             <element signature="e#9130#9480#0" expanded="false" />
-            <element signature="e#9514#10071#0" expanded="false" />
-            <element signature="e#10105#10662#0" expanded="false" />
-            <marker date="1519885476461" expanded="true" signature="282:15818" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="6519:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="10772:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="false" signature="15812:15816" ph="{...}" />
+            <element signature="e#9259#9467#0" expanded="false" />
+            <element signature="e#9299#9328#0" expanded="false" />
+            <element signature="e#9425#9457#0" expanded="false" />
+            <element signature="e#9514#10189#0" expanded="false" />
+            <element signature="e#10223#10898#0" expanded="false" />
+            <element signature="e#11008#15335#0" expanded="false" />
+            <element signature="e#11050#11118#0" expanded="false" />
+            <element signature="e#11254#12587#0" expanded="false" />
+            <element signature="e#11509#12580#0" expanded="false" />
+            <element signature="e#11549#12512#0" expanded="false" />
+            <element signature="e#11723#11777#0" expanded="false" />
+            <element signature="e#11950#12044#0" expanded="false" />
+            <element signature="e#12070#12149#0" expanded="false" />
+            <element signature="e#12177#12256#0" expanded="false" />
+            <element signature="e#12467#12501#0" expanded="false" />
+            <element signature="e#12530#12573#0" expanded="false" />
+            <element signature="e#12621#13407#0" expanded="false" />
+            <element signature="e#13445#14295#0" expanded="false" />
+            <element signature="e#14338#14626#0" expanded="false" />
+            <element signature="e#14492#14551#0" expanded="false" />
+            <element signature="e#14565#14621#0" expanded="false" />
+            <element signature="e#14664#14922#0" expanded="false" />
+            <element signature="e#14767#14915#0" expanded="false" />
+            <element signature="e#14870#14904#0" expanded="false" />
+            <element signature="e#14959#15216#0" expanded="false" />
+            <element signature="e#15061#15209#0" expanded="false" />
+            <element signature="e#15164#15198#0" expanded="false" />
+            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15623#15655#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15798#16310#0" expanded="false" />
+            <element signature="e#15850#16151#0" expanded="false" />
+            <element signature="e#16205#16286#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,27 +779,106 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Configure#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
             <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
             <element signature="e#1483#3801#0" expanded="false" />
+            <element signature="e#1521#1685#0" expanded="false" />
             <element signature="e#1726#3675#0" expanded="false" />
+            <element signature="e#1985#3662#0" expanded="false" />
+            <element signature="e#2602#3606#0" expanded="false" />
+            <element signature="e#2697#2725#0" expanded="false" />
+            <element signature="e#3337#3594#0" expanded="false" />
+            <element signature="e#3368#3582#0" expanded="false" />
             <element signature="e#3840#4015#0" expanded="false" />
             <element signature="e#4056#5031#0" expanded="false" />
+            <element signature="e#4061#5027#0" expanded="false" />
+            <element signature="e#4103#5022#0" expanded="false" />
+            <element signature="e#4558#4686#0" expanded="false" />
+            <element signature="e#4647#4678#0" expanded="false" />
+            <element signature="e#4773#4961#0" expanded="false" />
+            <element signature="e#4839#4953#0" expanded="false" />
             <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#5526#5786#0" expanded="false" />
+            <element signature="e#5572#5782#0" expanded="false" />
+            <element signature="e#5895#5919#0" expanded="false" />
             <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6083#6298#0" expanded="false" />
+            <element signature="e#6129#6294#0" expanded="false" />
+            <element signature="e#6407#6431#0" expanded="false" />
             <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#6556#7058#0" expanded="false" />
+            <element signature="e#6672#6698#0" expanded="false" />
+            <element signature="e#6818#7047#0" expanded="false" />
             <element signature="e#7095#7427#0" expanded="false" />
+            <element signature="e#7194#7421#0" expanded="false" />
+            <element signature="e#7249#7406#0" expanded="false" />
+            <element signature="e#7361#7395#0" expanded="false" />
             <element signature="e#7466#7804#0" expanded="false" />
+            <element signature="e#7567#7798#0" expanded="false" />
+            <element signature="e#7622#7783#0" expanded="false" />
+            <element signature="e#7738#7772#0" expanded="false" />
             <element signature="e#7842#8817#0" expanded="false" />
+            <element signature="e#8150#8194#0" expanded="false" />
+            <element signature="e#8347#8396#0" expanded="false" />
+            <element signature="e#8547#8603#0" expanded="false" />
+            <element signature="e#8758#8813#0" expanded="false" />
             <element signature="e#8856#9019#0" expanded="false" />
-            <element signature="e#9059#10729#0" expanded="false" />
+            <element signature="e#9059#10965#0" expanded="false" />
             <element signature="e#9130#9480#0" expanded="false" />
-            <element signature="e#9514#10071#0" expanded="false" />
-            <element signature="e#10105#10662#0" expanded="false" />
-            <marker date="1519885476461" expanded="true" signature="282:15818" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="6519:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="10772:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="false" signature="15812:15816" ph="{...}" />
+            <element signature="e#9259#9467#0" expanded="false" />
+            <element signature="e#9299#9328#0" expanded="false" />
+            <element signature="e#9425#9457#0" expanded="false" />
+            <element signature="e#9514#10189#0" expanded="false" />
+            <element signature="e#10223#10898#0" expanded="false" />
+            <element signature="e#11008#15335#0" expanded="false" />
+            <element signature="e#11050#11118#0" expanded="false" />
+            <element signature="e#11254#12587#0" expanded="false" />
+            <element signature="e#11509#12580#0" expanded="false" />
+            <element signature="e#11549#12512#0" expanded="false" />
+            <element signature="e#11723#11777#0" expanded="false" />
+            <element signature="e#11950#12044#0" expanded="false" />
+            <element signature="e#12070#12149#0" expanded="false" />
+            <element signature="e#12177#12256#0" expanded="false" />
+            <element signature="e#12467#12501#0" expanded="false" />
+            <element signature="e#12530#12573#0" expanded="false" />
+            <element signature="e#12621#13407#0" expanded="false" />
+            <element signature="e#13445#14295#0" expanded="false" />
+            <element signature="e#14338#14626#0" expanded="false" />
+            <element signature="e#14492#14551#0" expanded="false" />
+            <element signature="e#14565#14621#0" expanded="false" />
+            <element signature="e#14664#14922#0" expanded="false" />
+            <element signature="e#14767#14915#0" expanded="false" />
+            <element signature="e#14870#14904#0" expanded="false" />
+            <element signature="e#14959#15216#0" expanded="false" />
+            <element signature="e#15061#15209#0" expanded="false" />
+            <element signature="e#15164#15198#0" expanded="false" />
+            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15623#15655#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15798#16310#0" expanded="false" />
+            <element signature="e#15850#16151#0" expanded="false" />
+            <element signature="e#16205#16286#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,27 +975,106 @@
         <state relative-caret-position="493">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Configure#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
             <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
             <element signature="e#1483#3801#0" expanded="false" />
+            <element signature="e#1521#1685#0" expanded="false" />
             <element signature="e#1726#3675#0" expanded="false" />
+            <element signature="e#1985#3662#0" expanded="false" />
+            <element signature="e#2602#3606#0" expanded="false" />
+            <element signature="e#2697#2725#0" expanded="false" />
+            <element signature="e#3337#3594#0" expanded="false" />
+            <element signature="e#3368#3582#0" expanded="false" />
             <element signature="e#3840#4015#0" expanded="false" />
             <element signature="e#4056#5031#0" expanded="false" />
+            <element signature="e#4061#5027#0" expanded="false" />
+            <element signature="e#4103#5022#0" expanded="false" />
+            <element signature="e#4558#4686#0" expanded="false" />
+            <element signature="e#4647#4678#0" expanded="false" />
+            <element signature="e#4773#4961#0" expanded="false" />
+            <element signature="e#4839#4953#0" expanded="false" />
             <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#5526#5786#0" expanded="false" />
+            <element signature="e#5572#5782#0" expanded="false" />
+            <element signature="e#5895#5919#0" expanded="false" />
             <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6083#6298#0" expanded="false" />
+            <element signature="e#6129#6294#0" expanded="false" />
+            <element signature="e#6407#6431#0" expanded="false" />
             <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#6556#7058#0" expanded="false" />
+            <element signature="e#6672#6698#0" expanded="false" />
+            <element signature="e#6818#7047#0" expanded="false" />
             <element signature="e#7095#7427#0" expanded="false" />
+            <element signature="e#7194#7421#0" expanded="false" />
+            <element signature="e#7249#7406#0" expanded="false" />
+            <element signature="e#7361#7395#0" expanded="false" />
             <element signature="e#7466#7804#0" expanded="false" />
+            <element signature="e#7567#7798#0" expanded="false" />
+            <element signature="e#7622#7783#0" expanded="false" />
+            <element signature="e#7738#7772#0" expanded="false" />
             <element signature="e#7842#8817#0" expanded="false" />
+            <element signature="e#8150#8194#0" expanded="false" />
+            <element signature="e#8347#8396#0" expanded="false" />
+            <element signature="e#8547#8603#0" expanded="false" />
+            <element signature="e#8758#8813#0" expanded="false" />
             <element signature="e#8856#9019#0" expanded="false" />
-            <element signature="e#9059#10729#0" expanded="false" />
+            <element signature="e#9059#10965#0" expanded="false" />
             <element signature="e#9130#9480#0" expanded="false" />
-            <element signature="e#9514#10071#0" expanded="false" />
-            <element signature="e#10105#10662#0" expanded="false" />
-            <marker date="1519885476461" expanded="true" signature="282:15818" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="6519:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="10772:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="false" signature="15812:15816" ph="{...}" />
+            <element signature="e#9259#9467#0" expanded="false" />
+            <element signature="e#9299#9328#0" expanded="false" />
+            <element signature="e#9425#9457#0" expanded="false" />
+            <element signature="e#9514#10189#0" expanded="false" />
+            <element signature="e#10223#10898#0" expanded="false" />
+            <element signature="e#11008#15335#0" expanded="false" />
+            <element signature="e#11050#11118#0" expanded="false" />
+            <element signature="e#11254#12587#0" expanded="false" />
+            <element signature="e#11509#12580#0" expanded="false" />
+            <element signature="e#11549#12512#0" expanded="false" />
+            <element signature="e#11723#11777#0" expanded="false" />
+            <element signature="e#11950#12044#0" expanded="false" />
+            <element signature="e#12070#12149#0" expanded="false" />
+            <element signature="e#12177#12256#0" expanded="false" />
+            <element signature="e#12467#12501#0" expanded="false" />
+            <element signature="e#12530#12573#0" expanded="false" />
+            <element signature="e#12621#13407#0" expanded="false" />
+            <element signature="e#13445#14295#0" expanded="false" />
+            <element signature="e#14338#14626#0" expanded="false" />
+            <element signature="e#14492#14551#0" expanded="false" />
+            <element signature="e#14565#14621#0" expanded="false" />
+            <element signature="e#14664#14922#0" expanded="false" />
+            <element signature="e#14767#14915#0" expanded="false" />
+            <element signature="e#14870#14904#0" expanded="false" />
+            <element signature="e#14959#15216#0" expanded="false" />
+            <element signature="e#15061#15209#0" expanded="false" />
+            <element signature="e#15164#15198#0" expanded="false" />
+            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15623#15655#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15798#16310#0" expanded="false" />
+            <element signature="e#15850#16151#0" expanded="false" />
+            <element signature="e#16205#16286#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -867,48 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="47" lean-forward="false" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4216">
-          <caret line="589" column="30" lean-forward="false" selection-start-line="589" selection-start-column="30" selection-end-line="589" selection-end-column="30" />
-          <caret line="588" column="31" lean-forward="false" selection-start-line="588" selection-start-column="31" selection-end-line="588" selection-end-column="31" />
-          <folding>
-            <element signature="e#763#1446#0" expanded="false" />
-            <element signature="e#1483#3801#0" expanded="false" />
-            <element signature="e#1726#3675#0" expanded="false" />
-            <element signature="e#3840#4015#0" expanded="false" />
-            <element signature="e#4056#5031#0" expanded="false" />
-            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
-            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
-            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
-            <element signature="e#6556#7058#0" expanded="false" />
-            <element signature="e#7095#7427#0" expanded="false" />
-            <element signature="e#7466#7804#0" expanded="false" />
-            <element signature="e#7842#8817#0" expanded="false" />
-            <element signature="e#8856#9019#0" expanded="false" />
-            <element signature="e#9059#10729#0" expanded="false" />
-            <element signature="e#9130#9480#0" expanded="false" />
-            <element signature="e#9514#10071#0" expanded="false" />
-            <element signature="e#10105#10662#0" expanded="false" />
-            <marker date="1519885476461" expanded="true" signature="282:15818" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="6519:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="true" signature="10772:10814" ph="{...}" />
-            <marker date="1519885476461" expanded="false" signature="15812:15816" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -966,6 +1248,126 @@
             <marker date="1519886396123" expanded="false" signature="14105:14197" ph="..." />
             <marker date="1519886396123" expanded="false" signature="14391:14445" ph="..." />
             <marker date="1519886396123" expanded="false" signature="14476:14526" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="82" column="48" lean-forward="true" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="608" column="30" lean-forward="true" selection-start-line="608" selection-start-column="30" selection-end-line="608" selection-end-column="30" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Configure#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1483#3801#0" expanded="false" />
+            <element signature="e#1521#1685#0" expanded="false" />
+            <element signature="e#1726#3675#0" expanded="false" />
+            <element signature="e#1985#3662#0" expanded="false" />
+            <element signature="e#2602#3606#0" expanded="false" />
+            <element signature="e#2697#2725#0" expanded="false" />
+            <element signature="e#3337#3594#0" expanded="false" />
+            <element signature="e#3368#3582#0" expanded="false" />
+            <element signature="e#3840#4015#0" expanded="false" />
+            <element signature="e#4056#5031#0" expanded="false" />
+            <element signature="e#4061#5027#0" expanded="false" />
+            <element signature="e#4103#5022#0" expanded="false" />
+            <element signature="e#4558#4686#0" expanded="false" />
+            <element signature="e#4647#4678#0" expanded="false" />
+            <element signature="e#4773#4961#0" expanded="false" />
+            <element signature="e#4839#4953#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#5526#5786#0" expanded="false" />
+            <element signature="e#5572#5782#0" expanded="false" />
+            <element signature="e#5895#5919#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6083#6298#0" expanded="false" />
+            <element signature="e#6129#6294#0" expanded="false" />
+            <element signature="e#6407#6431#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6556#7058#0" expanded="false" />
+            <element signature="e#6672#6698#0" expanded="false" />
+            <element signature="e#6818#7047#0" expanded="false" />
+            <element signature="e#7095#7427#0" expanded="false" />
+            <element signature="e#7194#7421#0" expanded="false" />
+            <element signature="e#7249#7406#0" expanded="false" />
+            <element signature="e#7361#7395#0" expanded="false" />
+            <element signature="e#7466#7804#0" expanded="false" />
+            <element signature="e#7567#7798#0" expanded="false" />
+            <element signature="e#7622#7783#0" expanded="false" />
+            <element signature="e#7738#7772#0" expanded="false" />
+            <element signature="e#7842#8817#0" expanded="false" />
+            <element signature="e#8150#8194#0" expanded="false" />
+            <element signature="e#8347#8396#0" expanded="false" />
+            <element signature="e#8547#8603#0" expanded="false" />
+            <element signature="e#8758#8813#0" expanded="false" />
+            <element signature="e#8856#9019#0" expanded="false" />
+            <element signature="e#9059#10965#0" expanded="false" />
+            <element signature="e#9130#9480#0" expanded="false" />
+            <element signature="e#9259#9467#0" expanded="false" />
+            <element signature="e#9299#9328#0" expanded="false" />
+            <element signature="e#9425#9457#0" expanded="false" />
+            <element signature="e#9514#10189#0" expanded="false" />
+            <element signature="e#10223#10898#0" expanded="false" />
+            <element signature="e#11008#15335#0" expanded="false" />
+            <element signature="e#11050#11118#0" expanded="false" />
+            <element signature="e#11254#12587#0" expanded="false" />
+            <element signature="e#11509#12580#0" expanded="false" />
+            <element signature="e#11549#12512#0" expanded="false" />
+            <element signature="e#11723#11777#0" expanded="false" />
+            <element signature="e#11950#12044#0" expanded="false" />
+            <element signature="e#12070#12149#0" expanded="false" />
+            <element signature="e#12177#12256#0" expanded="false" />
+            <element signature="e#12467#12501#0" expanded="false" />
+            <element signature="e#12530#12573#0" expanded="false" />
+            <element signature="e#12621#13407#0" expanded="false" />
+            <element signature="e#13445#14295#0" expanded="false" />
+            <element signature="e#14338#14626#0" expanded="false" />
+            <element signature="e#14492#14551#0" expanded="false" />
+            <element signature="e#14565#14621#0" expanded="false" />
+            <element signature="e#14664#14922#0" expanded="false" />
+            <element signature="e#14767#14915#0" expanded="false" />
+            <element signature="e#14870#14904#0" expanded="false" />
+            <element signature="e#14959#15216#0" expanded="false" />
+            <element signature="e#15061#15209#0" expanded="false" />
+            <element signature="e#15164#15198#0" expanded="false" />
+            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15623#15655#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#15798#16310#0" expanded="false" />
+            <element signature="e#15850#16151#0" expanded="false" />
+            <element signature="e#16205#16286#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -379,21 +379,24 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							CloseLayer(layerName);
-
-							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsAborted",
 								{
 									detail:
 										{
-											pages:  this.shadowRoot.querySelectorAll(
+											pages:      this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player: this,
+											player:     this,
+											closeLayer: () =>
+														{
+															CloseLayer(layerName);
+															this.dispatchEvent(new CustomEvent("settingsClosed",
+																{
+																	detail: this,
+																}));
+
+															this.Start();
+														},
 										},
-								}));
-							this.dispatchEvent(new CustomEvent("settingsClosed",
-								{
-									detail: this,
 								}));
 						});
 			};
@@ -404,21 +407,24 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							CloseLayer(layerName);
-
-							this.Start();
 							this.dispatchEvent(new CustomEvent("settingsApplied",
 								{
 									detail:
 										{
-											pages:  this.shadowRoot.querySelectorAll(
+											pages:      this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player: this,
+											player:     this,
+											closeLayer: () =>
+														{
+															CloseLayer(layerName);
+															this.dispatchEvent(new CustomEvent("settingsClosed",
+																{
+																	detail: this,
+																}));
+
+															this.Start();
+														},
 										},
-								}));
-							this.dispatchEvent(new CustomEvent("settingsClosed",
-								{
-									detail: this,
 								}));
 						});
 			};
@@ -494,23 +500,26 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							this.shadowRoot.querySelector("#FrameImg").src = '';
-							SwitchView(false);
-							CloseLayer(layerName);
-
-							this.Start();
 							this.dispatchEvent(new CustomEvent("recognitionAborted",
 								{
 									detail:
 										{
-											pages:  this.shadowRoot.querySelectorAll(
+											pages:      this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											player: this,
+											player:     this,
+											closeLayer: () =>
+														{
+															this.shadowRoot.querySelector("#FrameImg").src = '';
+															SwitchView(false);
+															CloseLayer(layerName);
+															this.dispatchEvent(new CustomEvent("recognitionClosed",
+																{
+																	detail: this,
+																}));
+
+															this.Start();
+														},
 										},
-								}));
-							this.dispatchEvent(new CustomEvent("recognitionClosed",
-								{
-									detail: this,
 								}));
 						});
 			};
@@ -521,24 +530,27 @@ class Videoplayer
 					.addEventListener('click',
 						() =>
 						{
-							SwitchView(false);
-							CloseLayer(layerName);
-
-							this.Start();
 							this.dispatchEvent(new CustomEvent("recognitionApplied",
 								{
 									detail:
 										{
-											pages:     this.shadowRoot.querySelectorAll(
+											pages:      this.shadowRoot.querySelectorAll(
 												`.playerLayersContainer .${layerName}.layer .pages .page`),
-											imageData: this.shadowRoot.querySelector("#FrameImg").src,
-											player:    this,
+											imageData:  this.shadowRoot.querySelector("#FrameImg").src,
+											player:     this,
+											closeLayer: () =>
+														{
+															this.shadowRoot.querySelector("#FrameImg").src = '';
+															SwitchView(false);
+															CloseLayer(layerName);
+															this.dispatchEvent(new CustomEvent("recognitionClosed",
+																{
+																	detail: this,
+																}));
+
+															this.Start();
+														},
 										},
-								}));
-							this.shadowRoot.querySelector("#FrameImg").src = '';
-							this.dispatchEvent(new CustomEvent("recognitionClosed",
-								{
-									detail: this,
 								}));
 						});
 			};

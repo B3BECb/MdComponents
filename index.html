@@ -75,9 +75,17 @@
 		test.addEventListener('settingsClosed',
 			() => console.log("player settings closed"));
 		test.addEventListener('settingsApplied',
-			() => console.log("player settings applied"));
+			(args) =>
+			{
+				console.log("player settings applied");
+				args.detail.closeLayer();
+			});
 		test.addEventListener('settingsAborted',
-			() => console.log("player settings aborted"));
+			(args) =>
+			{
+				console.log("player settings aborted");
+				args.detail.closeLayer();
+			});
 		test.addEventListener('settingsPageChanged',
 			() => console.log("player settings page changed"));
 
@@ -87,9 +95,17 @@
 		test.addEventListener('recognitionClosed',
 			() => console.log("player recognition closed"));
 		test.addEventListener('recognitionApplied',
-			() => console.log("player recognition applied"));
+			(args) =>
+			{
+				console.log("player recognition applied");
+				args.detail.closeLayer();
+			});
 		test.addEventListener('recognitionAborted',
-			() => console.log("player recognition aborted"));
+			(args) =>
+			{
+				console.log("player recognition aborted");
+				args.detail.closeLayer();
+			});
 		test.addEventListener('recognitionFrameShowed',
 			() => console.log("recognition frame showed"));
 		test.addEventListener('recognitionFormShowed',
