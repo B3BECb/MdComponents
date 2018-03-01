@@ -425,6 +425,21 @@ class Videoplayer
 							   process.classList.add('error');
 
 						   },
+
+					LockLayer: (layerName) =>
+							   {
+								   let process = this.shadowRoot.querySelector(
+									   `.playerLayersContainer .${layerName}.layer .layerLocker`);
+								   process.classList.remove('hidden');
+							   },
+
+					UnlockLayer: (layerName) =>
+							   {
+								   let process = this.shadowRoot.querySelector(
+									   `.playerLayersContainer .${layerName}.layer .layerLocker`);
+								   process.classList.add('hidden');
+							   }
+
 				};
 
 		let BindSettingsCommands = () =>
@@ -802,6 +817,8 @@ class LayerResultEventArgs
 		this.ShowProcess = () => processController.Start(layerName);
 		this.HideProcess = () => processController.Stop(layerName);
 		this.ProcessError = () => processController.Error(layerName);
+		this.LockLayer = () => processController.LockLayer(layerName);
+		this.UnlockLayer = () => processController.UnlockLayer(layerName);
 	}
 }
 

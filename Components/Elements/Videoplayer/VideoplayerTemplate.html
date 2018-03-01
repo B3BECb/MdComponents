@@ -322,6 +322,13 @@
 			}
 		}
 
+		.layerLocker
+		{
+			position: absolute;
+			width:    100%;
+			height:   100%;
+		}
+
 		:host(.fullScreen) .ExpandBtn,
 		:host(:not(.fullScreen)) .CollapseBtn,
 		.recognition.layer .videoContainer.hidden + .controlsContainer #ShowFormBtn,
@@ -480,6 +487,7 @@
 		</div>
 		<div class = "settings layer hidden">
 			<div class = "controlsContainer">
+				<div class="layerLocker hidden"></div>
 				<div class = "main line">
 					<span class = "content">
 						<div class = "header line">
@@ -557,6 +565,7 @@
 					 src = "Frames/frame1.jpg" />
 			</div>
 			<div class = "controlsContainer">
+				<div class="layerLocker hidden"></div>
 				<div class = "main line">
 					<span class = "content">
 						<div class = "header line">
