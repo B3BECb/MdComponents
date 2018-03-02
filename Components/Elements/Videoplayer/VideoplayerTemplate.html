@@ -187,6 +187,11 @@
 			padding-right: 8px;
 		}
 
+		:host(.stub) .button
+		{
+			display: none;
+		}
+
 		.button.animated:not(.markared):hover
 		{
 			background: rgba(27, 27, 27, 1);
@@ -207,9 +212,14 @@
 			transition-delay: 0.1s;
 		}
 
-		.layer:not(:hover) .hiding
+		:host(:not(.stub)) .layer:not(:hover) .hiding
 		{
 			flex-basis: 0;
+		}
+
+		:host(.stub) .layer .hiding
+		{
+			flex-basis: 5px;
 		}
 
 		.main
@@ -275,13 +285,15 @@
 			overflow:   hidden;
 		}
 
-		:host .loadingProgress.loading
+		:host .loadingProgress.loading,
+		:host(.stub) .loadingProgress
 		{
 			opacity: 1;
 			height:  5px;
 		}
 
-		:host .loadingProgress.error
+		:host .loadingProgress.error,
+		:host(.stub.error) .loadingProgress
 		{
 			background: #F44336;
 		}
@@ -293,7 +305,8 @@
 			background: #2196F3;
 		}
 
-		:host .loadingProgress.error .step
+		:host .loadingProgress.error .step,
+		:host(.stub.error) .loadingProgress .step
 		{
 			display: none;
 		}
@@ -386,7 +399,7 @@
 			</div>
 			<div class = "controlsContainer">
 				<div class = "header line">
-					<span class = "name">Camera 1</span>
+					<span class = "name"></span>
 				</div>
 				<div class = "representation">
 					<span class = "sourceWindow"></span>
