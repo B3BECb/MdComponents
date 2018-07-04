@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="16fed8ae-b510-4c7f-88ae-28cf3acfdb09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" afterPath="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,18 +16,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+            <state relative-caret-position="431">
+              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#1244#3264#0" expanded="false" />
-                <element signature="e#3472#5436#0" expanded="false" />
-                <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -37,8 +37,8 @@
       <file leaf-file-name="Videoplayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="737" column="1" lean-forward="true" selection-start-line="737" selection-start-column="1" selection-end-line="737" selection-end-column="1" />
               <folding>
                 <element signature="e#102#239#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
@@ -109,7 +109,6 @@
                 <element signature="e#16807#17064#0" expanded="false" />
                 <element signature="e#16909#17057#0" expanded="false" />
                 <element signature="e#17012#17046#0" expanded="false" />
-                <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
                 <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
                 <element signature="e#17471#17503#0" expanded="false" />
                 <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -117,28 +116,27 @@
                 <element signature="e#17698#17999#0" expanded="false" />
                 <element signature="e#18053#18134#0" expanded="false" />
                 <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-                <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-                <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
                 <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
                 <element signature="n#VideoplayerTrigger#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
                 <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-                <element signature="n#VideoplayerLayers#0" expanded="false" />
                 <element signature="n#VideoplayerLayer#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
                 <element signature="n#LayerPage#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+                <element signature="n#LayerResultEventArgs#0" expanded="false" />
+                <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
                 <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoplayerTemplate.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VideoplayerTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="459">
+              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -230,9 +228,9 @@
         <option value="$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInput.js" />
         <option value="$PROJECT_DIR$/Components/Elements/MaterialSwitch/MaterialSwitch.js" />
         <option value="$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInputTemplate.html" />
+        <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
         <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html" />
       </list>
     </option>
   </component>
@@ -249,11 +247,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="56" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -273,7 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,11 +307,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -348,7 +346,16 @@
       <workItem from="1519798834151" duration="21570000" />
       <workItem from="1519885474243" duration="16981000" />
       <workItem from="1519973734614" duration="13000" />
-      <workItem from="1519973781486" duration="6383000" />
+      <workItem from="1519973781486" duration="7086000" />
+      <workItem from="1520230102510" duration="612000" />
+      <workItem from="1520260660616" duration="18000" />
+      <workItem from="1520343096411" duration="32000" />
+      <workItem from="1522325909281" duration="830000" />
+      <workItem from="1530278621269" duration="2320000" />
+      <workItem from="1530609792783" duration="233000" />
+      <workItem from="1530610119055" duration="39000" />
+      <workItem from="1530702298948" duration="16000" />
+      <workItem from="1530702507528" duration="81000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1519196570892</created>
@@ -553,21 +560,27 @@
       <option name="project" value="LOCAL" />
       <updated>1519993978778</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixed fullscreen">
+      <created>1519999610736</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1519999610736</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76747000" />
+    <option name="totallyTimeSpent" value="81631000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="56" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344992" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15542677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35069445" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35" sideWeight="0.49578503" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,7 +639,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="relative paths has been set to absolute paths" />
     <MESSAGE value="added videoplayer" />
     <MESSAGE value="styling initial" />
     <MESSAGE value="posited image" />
@@ -651,7 +663,8 @@
     <MESSAGE value="added layer locker" />
     <MESSAGE value="added host stub style" />
     <MESSAGE value="remover frame1.jpg" />
-    <option name="LAST_COMMIT_MESSAGE" value="remover frame1.jpg" />
+    <MESSAGE value="fixed fullscreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed fullscreen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -662,15 +675,1456 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="747" column="3" lean-forward="true" selection-start-line="747" selection-start-column="3" selection-end-line="747" selection-end-column="3" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4063">
+          <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="4" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="9" lean-forward="false" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1244#3264#0" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#239#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#684#727#0" expanded="false" />
+            <element signature="e#763#1446#0" expanded="false" />
+            <element signature="e#920#1435#0" expanded="false" />
+            <element signature="e#1267#1387#0" expanded="false" />
+            <element signature="e#1339#1376#0" expanded="false" />
+            <element signature="e#1681#1851#0" expanded="false" />
+            <element signature="e#1908#3864#0" expanded="false" />
+            <element signature="e#3903#4098#0" expanded="false" />
+            <element signature="e#4140#4344#0" expanded="false" />
+            <element signature="e#4826#5001#0" expanded="false" />
+            <element signature="e#5042#6017#0" expanded="false" />
+            <element signature="e#5544#5672#0" expanded="false" />
+            <element signature="e#5633#5664#0" expanded="false" />
+            <element signature="e#5759#5947#0" expanded="false" />
+            <element signature="e#5825#5939#0" expanded="false" />
+            <element signature="e#6126#6214#0" expanded="false" />
+            <element signature="e#6224#6251#0" expanded="false" />
+            <element signature="n#!!block;n#Start#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#6646#6906#0" expanded="false" />
+            <element signature="e#7015#7039#0" expanded="false" />
+            <element signature="n#!!block;n#Stop#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7203#7418#0" expanded="false" />
+            <element signature="e#7527#7551#0" expanded="false" />
+            <element signature="n#!!block;n#IsPlayerStarted#0;n#Videoplayer#0" expanded="false" />
+            <element signature="n#!!block;n#_BindCommands#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#7676#8178#0" expanded="false" />
+            <element signature="e#7792#7818#0" expanded="false" />
+            <element signature="e#7938#8167#0" expanded="false" />
+            <element signature="e#8215#8547#0" expanded="false" />
+            <element signature="e#8314#8541#0" expanded="false" />
+            <element signature="e#8369#8526#0" expanded="false" />
+            <element signature="e#8481#8515#0" expanded="false" />
+            <element signature="e#8586#8924#0" expanded="false" />
+            <element signature="e#8687#8918#0" expanded="false" />
+            <element signature="e#8742#8903#0" expanded="false" />
+            <element signature="e#8858#8892#0" expanded="false" />
+            <element signature="e#8962#9937#0" expanded="false" />
+            <element signature="e#9270#9314#0" expanded="false" />
+            <element signature="e#9467#9516#0" expanded="false" />
+            <element signature="e#9667#9723#0" expanded="false" />
+            <element signature="e#9878#9933#0" expanded="false" />
+            <element signature="e#9976#10139#0" expanded="false" />
+            <element signature="e#11449#12984#0" expanded="false" />
+            <element signature="e#11522#11668#0" expanded="false" />
+            <element signature="e#11721#11981#0" expanded="false" />
+            <element signature="e#12019#12369#0" expanded="false" />
+            <element signature="e#12148#12356#0" expanded="false" />
+            <element signature="e#12188#12217#0" expanded="false" />
+            <element signature="e#12314#12346#0" expanded="false" />
+            <element signature="e#12403#12643#0" expanded="false" />
+            <element signature="e#12677#12917#0" expanded="false" />
+            <element signature="e#13103#13332#0" expanded="false" />
+            <element signature="e#13373#15082#0" expanded="false" />
+            <element signature="e#14257#14351#0" expanded="false" />
+            <element signature="e#14916#14950#0" expanded="false" />
+            <element signature="e#15116#15586#0" expanded="false" />
+            <element signature="e#15624#16143#0" expanded="false" />
+            <element signature="e#16186#16474#0" expanded="false" />
+            <element signature="e#16340#16399#0" expanded="false" />
+            <element signature="e#16413#16469#0" expanded="false" />
+            <element signature="e#16512#16770#0" expanded="false" />
+            <element signature="e#16615#16763#0" expanded="false" />
+            <element signature="e#16718#16752#0" expanded="false" />
+            <element signature="e#16807#17064#0" expanded="false" />
+            <element signature="e#16909#17057#0" expanded="false" />
+            <element signature="e#17012#17046#0" expanded="false" />
+            <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17471#17503#0" expanded="false" />
+            <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
+            <element signature="e#17646#18158#0" expanded="false" />
+            <element signature="e#17698#17999#0" expanded="false" />
+            <element signature="e#18053#18134#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
+            <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
+            <element signature="n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
+            <element signature="n#LayerPage#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="73" column="47" lean-forward="false" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,7 +2271,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -825,17 +2278,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -848,10 +2300,11 @@
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -998,7 +2451,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -1006,17 +2458,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -1029,10 +2480,11 @@
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1112,7 +2564,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -1120,17 +2571,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -1211,10 +2661,11 @@
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1293,7 +2744,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -1301,17 +2751,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -1406,10 +2855,11 @@
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1488,7 +2938,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -1496,17 +2945,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -1615,13 +3063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="79" column="23" lean-forward="true" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInputTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1629,10 +3070,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/ValidableInput/ValidableInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="e#111#260#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#InsertTemplate#0;n#ValidableInput#0" expanded="false" />
+            <element signature="e#832#956#0" expanded="false" />
+            <element signature="e#917#949#0" expanded="false" />
+            <element signature="n#!!block;n#IsValueValid#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#validator#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#validator#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#value#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#value#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#title#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#title#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#errorText#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#errorText#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#error#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#error#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#noCollapse#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#noCollapse#1;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#type#0;n#ValidableInput#0" expanded="false" />
+            <element signature="n#!!block;n#type#1;n#ValidableInput#0" expanded="false" />
+            <element signature="e#2453#2673#0" expanded="false" />
+            <element signature="e#2504#2609#0" expanded="false" />
+            <element signature="e#2683#2781#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#template#1;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#!!top" expanded="false" />
+            <element signature="n#template#4;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/Videoplayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="737" column="1" lean-forward="true" selection-start-line="737" selection-start-column="1" selection-end-line="737" selection-end-column="1" />
           <folding>
             <element signature="e#102#239#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#Videoplayer#0" expanded="false" />
@@ -1703,7 +3244,6 @@
             <element signature="e#16807#17064#0" expanded="false" />
             <element signature="e#16909#17057#0" expanded="false" />
             <element signature="e#17012#17046#0" expanded="false" />
-            <element signature="n#!!block;n#_Reload#0;n#Videoplayer#0" expanded="false" />
             <element signature="n#!!block;n#Types#0;n#Videoplayer#0" expanded="false" />
             <element signature="e#17471#17503#0" expanded="false" />
             <element signature="n#!!block;n#ConvertUrlToBase64#0;n#Videoplayer#0" expanded="false" />
@@ -1711,17 +3251,16 @@
             <element signature="e#17698#17999#0" expanded="false" />
             <element signature="e#18053#18134#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#VideoplayerConfiguration#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#VideoplayerConfiguration#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerTrigger#0" expanded="false" />
             <element signature="n#!!doc;n#VideoplayerLayers#0" expanded="false" />
-            <element signature="n#VideoplayerLayers#0" expanded="false" />
             <element signature="n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#VideoplayerLayer#0" expanded="false" />
             <element signature="n#LayerPage#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#LayerPage#0" expanded="false" />
+            <element signature="n#LayerResultEventArgs#0" expanded="false" />
+            <element signature="n#OnRecognizeEventArgs#0" expanded="false" />
             <element signature="n#!!block;n#constructor#0;n#OnRecognizeEventArgs#0" expanded="false" />
           </folding>
         </state>
@@ -1729,83 +3268,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+        <state relative-caret-position="431">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#1244#3264#0" expanded="false" />
-            <element signature="e#3472#5436#0" expanded="false" />
-            <element signature="n#template#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#template#1;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#template#2;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#validable-input#0;n#div#0;n#template#2;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/Elements/Videoplayer/VideoplayerTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#2;n#span#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#span#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#span#0;n#div#1;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#svg#0;n#span#0;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#0;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#0;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#1;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#2;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#span#3;n#span#1;n#div#1;n#div#2;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#template#1;n#!!top" expanded="false" />
-            <element signature="n#template#3;n#!!top" expanded="false" />
-            <element signature="n#template#4;n#!!top" expanded="false" />
+            <element signature="n#template#3;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
