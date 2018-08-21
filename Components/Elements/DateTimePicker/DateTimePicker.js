@@ -33,6 +33,8 @@ class MaterialDateTimePicker
 
 	Configure(configuration = new DateTimePickerConfiguration())
 	{
+
+
 		this._configuration = configuration;
 	}
 
