@@ -18,3 +18,4 @@ The following components are ready:
 * Paginator
 * ValidableInput
 * Videoplayer
+* NotificationRing
