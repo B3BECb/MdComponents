@@ -105,15 +105,6 @@ class MaterialUserRing
 	 */
 	set Title(value)
 	{
-		if(value)
-		{
-			this.removeAttribute("headless");
-		}
-		else
-		{
-			this.setAttribute("headless", "");
-		}
-
 		this.shadowRoot.querySelector(".userRing .profile.control .header .caption").textContent = value;
 	}
 
@@ -139,6 +130,31 @@ class MaterialUserRing
 		else
 		{
 			this.removeAttribute("collapsed");
+		}
+	}
+
+	/**
+	 * Возвращает состояние заголовка.
+	 * @return {boolean}
+	 */
+	get IsHeadless()
+	{
+		return this.hasAttribute("headless");
+	}
+
+	/**
+	 * Устанавливает состояние заголовка.
+	 * @param {boolean} value - Состояние;
+	 */
+	set IsHeadless(value)
+	{
+		if(value)
+		{
+			this.setAttribute("headless", "");
+		}
+		else
+		{
+			this.removeAttribute("headless");
 		}
 	}
 }
