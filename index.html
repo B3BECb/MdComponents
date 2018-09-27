@@ -75,13 +75,22 @@
 
 		.versionInfo
 		{
-			font-size: 10px;
-			color:     gray;
+			font-size:    10px;
+			color:        gray;
+			margin-right: 16px;
 		}
 
 		.action
 		{
 			margin: 4px 0;
+		}
+
+		.text
+		{
+			text-overflow: ellipsis;
+			overflow:      hidden;
+			width:         100%;
+			white-space:   nowrap;
 		}
 
 	</style>
@@ -95,11 +104,11 @@
 					style = "margin-left: 50vw; ">
 	<div class = "userProfile">
 		<div class = "userInfo">
-			<div class = "displayName">Igor</div>
-			<div class = "roleDisplayName">Administrator</div>
+			<div class = "displayName text">Igor</div>
+			<div class = "roleDisplayName text">Administrator</div>
 		</div>
 		<div class = "actions">
-			<div class = "versionInfo">Version 2.14.1.5093</div>
+			<div class = "versionInfo text">Version 2.14.1.5093</div>
 			<div class = "action griddedButton outlined">Logout</div>
 		</div>
 	</div>
