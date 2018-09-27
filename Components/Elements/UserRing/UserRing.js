@@ -47,6 +47,18 @@ class MaterialUserRing
 						detail: this,
 					}));
 			});
+
+		this.shadowRoot
+			.querySelector(".userRing .profile.control .header .exit")
+			.addEventListener("click", args =>
+			{
+				this._SwitchCollapsing(args);
+
+				this.dispatchEvent(new CustomEvent("exitClicked",
+					{
+						detail: this,
+					}));
+			});
 	}
 
 	_SwitchCollapsing(args)
@@ -74,6 +86,24 @@ class MaterialUserRing
 					}));
 			}
 		}
+	}
+
+	/**
+	 * Возвращает заголовок списка сообщений.
+	 * @return {string}
+	 */
+	get Title()
+	{
+		return this.shadowRoot.querySelector(".userRing .notifications.control .header .caption").textContent;
+	}
+
+	/**
+	 * Устанавливает заголовок списка сообщений.
+	 * @param {string} value - Заголовок;
+	 */
+	set Title(value)
+	{
+		this.shadowRoot.querySelector(".userRing .notifications.control .header .caption").textContent = value;
 	}
 
 	/**
