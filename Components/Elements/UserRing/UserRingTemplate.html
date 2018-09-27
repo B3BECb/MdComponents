@@ -124,6 +124,11 @@
 			border-bottom:  1px solid #F2F2F2;
 		}
 
+		:host([headless]) .userRing .profile.control .header
+		{
+			display: none;
+		}
+
 		.userRing .profile.control .header .caption
 		{
 			width:       100%;
@@ -219,7 +224,7 @@
 		<div class = "collapsable arrowUp border"></div>
 		<div class = "collapsable profile control shadowed">
 			<div class = "header shadowed">
-				<div class = "caption">Header</div>
+				<div class = "caption"></div>
 				<div class = "exit">
 					<svg style = "width:24px;height:24px"
 						 viewBox = "0 0 24 24">

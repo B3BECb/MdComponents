@@ -21,6 +21,8 @@ class MaterialUserRing
 	connectedCallback()
 	{
 		this.IsCollapsed = true;
+
+		this.Title = "";
 	}
 
 	_InsertTemplate()
@@ -94,7 +96,7 @@ class MaterialUserRing
 	 */
 	get Title()
 	{
-		return this.shadowRoot.querySelector(".userRing .notifications.control .header .caption").textContent;
+		return this.shadowRoot.querySelector(".userRing .profile.control .header .caption").textContent;
 	}
 
 	/**
@@ -103,7 +105,16 @@ class MaterialUserRing
 	 */
 	set Title(value)
 	{
-		this.shadowRoot.querySelector(".userRing .notifications.control .header .caption").textContent = value;
+		if(value)
+		{
+			this.removeAttribute("headless");
+		}
+		else
+		{
+			this.setAttribute("headless", "");
+		}
+
+		this.shadowRoot.querySelector(".userRing .profile.control .header .caption").textContent = value;
 	}
 
 	/**

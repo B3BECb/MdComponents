@@ -8,6 +8,8 @@
 		  content = "#db5945">
 	<script src = "ReferenceAssembler.js"
 			type = "text/javascript"></script>
+	<link rel = "stylesheet"
+		  href = "Components/css/GriddedButton.css">
 	<style>
 		@font-face
 		{
@@ -21,35 +23,106 @@
 			src:         url("Components/fonts/Roboto/Roboto-Bold.ttf");
 		}
 
-		.userControl
+		.userProfile
 		{
-			background: red;
-			height: 300px;
-			width: 300px;
+			font-family:     "Roboto";
+			height:          130px;
+			width:           300px;
+			justify-content: space-between;
+			background:      rgba(255, 255, 255, 0.5);
+			margin:          0 -2px;
 		}
+
+		.userProfile,
+		.userInfo,
+		.actions
+		{
+			display: flex;
+		}
+
+		.userInfo
+		{
+			margin: 6px 6px 0px 6px;
+		}
+
+		.userProfile,
+		.userInfo
+		{
+			flex-direction: column;
+		}
+
+		.displayName
+		{
+			font-family: "Roboto Bold";
+			font-size:   32px;
+		}
+
+		.roleDisplayName
+		{
+			font-size:  14px;
+			margin-top: 8px;
+		}
+
+		.actions
+		{
+			flex-direction:  row;
+			justify-content: space-between;
+			background:      rgba(121, 121, 121, 0.1);
+			align-items:     center;
+			border-top:      1px solid rgba(0, 0, 0, 0.14);
+			padding:         0 8px;
+		}
+
+		.versionInfo
+		{
+			font-size: 10px;
+			color:     gray;
+		}
+
+		.action
+		{
+			margin: 4px 0;
+		}
+
 	</style>
 </head>
 <body style = "margin: 0">
-	<material-notification-line id="aa" style="display: none;"></material-notification-line>
-	<material-notification-ring id="rr" style="margin-left: 50vw; display:none"></material-notification-ring>
-	<material-user-ring id="uu" style="margin-left: 50vw; ">
-		<div class="userControl">aaaa</div>
-	</material-user-ring>
+<material-notification-line id = "aa"
+							style = "display: none;"></material-notification-line>
+<material-notification-ring id = "rr"
+							style = "margin-left: 50vw; display:none"></material-notification-ring>
+<material-user-ring id = "uu"
+					style = "margin-left: 50vw; ">
+	<div class = "userProfile">
+		<div class = "userInfo">
+			<div class = "displayName">Igor</div>
+			<div class = "roleDisplayName">Administrator</div>
+		</div>
+		<div class = "actions">
+			<div class = "versionInfo">Version 2.14.1.5093</div>
+			<div class = "action griddedButton outlined">Logout</div>
+		</div>
+	</div>
+</material-user-ring>
 </body>
 <script>
 
 	Builder
 	//.RegisterScript("Components/Elements/NotificationRing/NotificationLine.js")
-	.RegisterScript("Components/Elements/NotificationRing/NotificationRing.js")
-	.RegisterScript("Components/Elements/UserRing/UserRing.js")
-	.Build()
-	.AfterAll(() => Initialize());
+		.RegisterScript("Components/Elements/NotificationRing/NotificationRing.js")
+		.RegisterScript("Components/Elements/UserRing/UserRing.js")
+		.Build()
+		.AfterAll(() => Initialize());
 
 	function Initialize()
 	{
+		//uu.Title = "Пользователь";
+
 		uu.addEventListener("ringClicked", () => console.log("ringClicked"));
 		uu.addEventListener("userRingExpanded", () => console.log("userRingExpanded"));
 		uu.addEventListener("userRingCollapsed", () => console.log("userRingCollapsed"));
+
+		uu.IsCollapsed = false;
 
 		rr.Title = "Уведомления";
 
@@ -64,21 +137,21 @@
 		rr.AddNotification("aaaa2", "bbbb");
 		rr.AddNotification("aaaa3", "bbbb");
 
-		rr.Configuration = [aaa.content.cloneNode(true),aaa.content.cloneNode(true),aaa.content.cloneNode(true)];
+		rr.Configuration = [aaa.content.cloneNode(true), aaa.content.cloneNode(true), aaa.content.cloneNode(true)];
 
 		aa.addEventListener("messageClosed", () => console.log("messageClosed"));
 		aa.addEventListener("messageCollapsed", () => console.log("messageCollapsed"));
 		aa.addEventListener("messageExpanded", () => console.log("messageExpanded"));
 
-		aa.Title = "aaaaaa";
+		aa.Title   = "aaaaaa";
 		aa.Message = "bbbbbbb";
 		//aa.Icon = "url(https://scontent-lht6-1.cdninstagram.com/vp/aa0b4275660042b95bf676b5e05b9e2f/5BFA6E93/t51.2885-19/s150x150/23164677_1651279614935180_681656170808606720_n.jpg)";
-		aa.Icon = aaa.content.cloneNode(true);
+		aa.Icon    = aaa.content.cloneNode(true);
 	}
 
 </script>
 
-<template id="aaa">
+<template id = "aaa">
 	<svg style = "width:24px;height:24px"
 		 viewBox = "0 0 24 24">
 		<path fill = "#000000"
