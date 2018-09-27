@@ -21,30 +21,36 @@
 			src:         url("Components/fonts/Roboto/Roboto-Bold.ttf");
 		}
 
-		/*@media (max-width: 600px)
+		.userControl
 		{
-			#test
-			{
-				width:  100vw !important;
-				margin: 0 !important;
-			}
-		}*/
+			background: red;
+			height: 300px;
+			width: 300px;
+		}
 	</style>
 </head>
 <body style = "margin: 0">
 	<material-notification-line id="aa" style="display: none;"></material-notification-line>
-	<material-notification-ring id="rr" style="margin-left: 50vw"></material-notification-ring>
+	<material-notification-ring id="rr" style="margin-left: 50vw; "></material-notification-ring>
+	<material-user-ring id="uu" style="margin-left: 50vw; display:none">
+		<div class="userControl">aaaa</div>
+	</material-user-ring>
 </body>
 <script>
 
 	Builder
 	//.RegisterScript("Components/Elements/NotificationRing/NotificationLine.js")
 	.RegisterScript("Components/Elements/NotificationRing/NotificationRing.js")
+	.RegisterScript("Components/Elements/UserRing/UserRing.js")
 	.Build()
 	.AfterAll(() => Initialize());
 
 	function Initialize()
 	{
+		uu.addEventListener("ringClicked", () => console.log("ringClicked"));
+		uu.addEventListener("userRingExpanded", () => console.log("userRingExpanded"));
+		uu.addEventListener("userRingCollapsed", () => console.log("userRingCollapsed"));
+
 		rr.Title = "Уведомления";
 
 		rr.addEventListener("ringClicked", () => console.log("ringClicked"));
