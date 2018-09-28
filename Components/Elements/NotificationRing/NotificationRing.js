@@ -88,7 +88,7 @@ class MaterialNotificationRing
 
 	_SwitchCollapsing(args)
 	{
-		if(args.target !== this)
+		if(!this.contains(args.target))
 		{
 			this.IsCollapsed = !this.IsCollapsed;
 
