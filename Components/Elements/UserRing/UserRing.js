@@ -65,7 +65,7 @@ class MaterialUserRing
 
 	_SwitchCollapsing(args)
 	{
-		if(args.target !== this && args.target.parentElement !== this)
+		if(!this.contains(args.target))
 		{
 			this.IsCollapsed = !this.IsCollapsed;
 
