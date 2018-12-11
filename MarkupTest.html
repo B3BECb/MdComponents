@@ -17,8 +17,40 @@
 
 
 	</style>
+	<script src = "ReferenceAssembler.js"
+			type = "text/javascript"></script>
 </head>
 <body>
-
+<md-page-loading id="pl"></md-page-loading>
 </body>
+
+<script>
+	Builder
+		.RegisterScript("Components/Elements/PageLoading/PageLoading.js")
+		.Build()
+		.AfterAll(() => Initialize());
+
+	function sleep(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+	async function Initialize()
+	{
+		pl.ChangeState(PageLoaderStates.Loading);
+
+		pl.Value = 10;
+
+		await sleep(1000);
+
+		pl.Value = 30;
+
+		await sleep(5000);
+
+		pl.Value = 60;
+
+		await sleep(1000);
+
+		pl.ChangeState(PageLoaderStates.Error);
+	}
+</script>
 </html>
